@@ -15,22 +15,22 @@
           <img src="img\nerds-logo.svg" width="159.87" height="65,02" alt="Логотип студии «Нёрдс»">
         </a>
         <ul>
-          <li><a href="blank.html">Студия</a></li>
-          <li><a href="blank.html">Клиенты</a></li>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
           <li><a href="shop.html">Магазин</a></li>
-          <li><a href="blank.html">Контакты</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
         <a>
           <img src="img\cart-icon.svg" width="159.87" height="65,02" alt="Иконка корзины">
         </a>    <!-- Иконка корзины -->
-              <a href="blank.html">Корзина</a>
+              <a href="#">Корзина</a>
         <!-- Навигация -->
       </nav>
     </header>
     <main>
-      <h1 class="visually-hidden">Интернет магазин «Nёrds» </h1> <!-- Скрыт -->
       <!-- Основное содержимое страницы -->
-      <section class="services">
+      <h1 class="visually-hidden">Интернет магазин «Nёrds» </h1> <!-- Скрыт -->
+            <section class="services">
     <h2 class="visually-hidden">Услуги</h2> <!-- Скрыт -->
       <ul>
           <li>
@@ -49,19 +49,20 @@
         <li>
           <h3>Презентации</h3>
           <a>
-            <img src="img\illustration-1 1.jpg" width="" height="" alt="Иконка ноутбука">
-          </a>    <!-- Ноут на красном фоне в JPEG -->
+            <img src="img\illustration-3 1.jpg" width="" height="" alt="Иконка монитора компьютера">
+          </a>    <!-- Монитор компьютера на желтом фоне в JPEG -->
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
         </li>
       </ul>
       </section>
         <section class="about">
-          <h2 class="visually-hidden">О студии»</h2> <!-- Скрыт -->
+          <h2 class="visually-hidden">О студии</h2> <!-- Скрыт -->
           <p> Мы — маленькая, но гордая веб-студия из Краснодара</p>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+             превыше креатива. Работаем не покладая рук, как роботы.</p>
 <h4>Выполняем заказы на разработку:</h4>
  <ul>
-  <li>>Веб-сайтов любой сложности</li>
+  <li>Веб-сайтов любой сложности</li>
   <li>Мобильных приложений для iOS и Android</li>
   <li>Слайдшоу и видео для корпоративных презентаций</li>
 </ul>
@@ -70,7 +71,7 @@
               <a>
                 <img src="img\nerds-logo.svg" width="159.87" height="65,02" alt="Логотип студии «Нёрдс»">
               </a>
-              <h2>с 2004 года Любим точность во всем:</h2>
+              <h2 class="caps">с 2004 года Любим точность во всем:</h2>
               <ul>
                 <li>
                   <p>146 &percnt;</p>
@@ -79,7 +80,7 @@
 
                 <li>
                   <p>100 &percnt;</p>
-                  <p>УСоблюдение сроков</p>
+                  <p>Соблюдение сроков</p>
                 </li>
 
                 <li>
@@ -90,7 +91,7 @@
               </ul>
             </section>
         <section class="companies">
-          <h3 class="visually-hidden">Логотипы клиентов</h3> <!-- Скрыт Логотипы разных компаний -->
+          <h4 class="visually-hidden">Логотипы клиентов</h4> <!-- Скрыт - Лого разных компаний -->
           <section>
            <figure>
             <img src="" width="" height="" alt="Логотип HTML Academy"> <!-- ПУСТО -->
@@ -115,14 +116,29 @@
     <p>
       наб. Реки Карповки,<br>
       5 лит П, Санкт-Петербург</p>
-      Адрес: г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
-      Телефон: <a href="tel:+78005558628">+7 800 555-86-28</a>
-    <button type="button">Напишите нам</button>
+      Телефон: <a href="tel:+78005558628">+7 800 555-86-28</a><br>
+    <button type="button">Напишите нам</button><!-- Кнопка поп-апа - переход в Форму -->
   </section>
 
+  <section>Напишите нам</section> <!-- Поп-ап -->
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <label for="name">Ваше имя:</label><br>
+    <input type="text" id="name" name="name" value="Имя Фамилия" required>
+        <label for="email">Ваш email:</label><br>
+    <input type="text" id="email" name="email" value="email@example.com" required><br>
+    <label for="letterText">Текст письма:</label>
+    <textarea id="letterText" name="LetterText" value="В свободной форме" rows="5" required></textarea>
+      <div class="buttons">
+      <input type="submit" value="Отправить">
+  </form>
+
+  <section> КАРТА ЧЕРЕЗ JS  </section>
+
+  <section>
   <p>Давайте дружить, это выгодно!</p>
   <p>Скидка 10% для друзей из социальных сетей.</p>
   <!-- Подвал сайта -->
+ </section>
 </footer>
 </body>
 </html>

@@ -72,11 +72,17 @@ body {
   margin: 0;
   padding: 0 10px;
   font-size: 16px;
-  line-height: 20px; /*
+  line-height: 20px; */
 }
 
-.visually-hidden  /* Спрятанные заголовки h1 и h2 */
+
+.caps /* Заглавные буквы */
 {
+  text-transform: uppercase;
+}
+
+/* Спрятанные заголовки h1 и h2 */
+.visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
