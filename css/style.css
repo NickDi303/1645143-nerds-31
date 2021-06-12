@@ -1,3 +1,9 @@
+/* На будущее для стайлгайда
+:hover — наведение мыши;
+:active — клик (мышью или с клавиатуры);
+:visited — посещённая ссылка;*/
+
+
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -88,4 +94,12 @@ body {
     width: 1px;
     height: 1px;
     margin: -1px;
+}
+
+/* Отображение телефона */
+a[href^="tel:"] {
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #000000;
 }

@@ -30,7 +30,13 @@
     <main>
       <!-- Основное содержимое страницы -->
       <h1 class="visually-hidden">Интернет магазин «Nёrds» </h1> <!-- Скрыт -->
-            <section class="services">
+      <section class="services">
+              <p>Долго, дорого, скрупулезно.</p>
+              <p>Математически выверенный дизайн<br>
+                для вашего сайта или мобильного приложения.</p>
+                <button type="button">УЗНАТЬ БОЛЬШЕ</button><!-- Кнопка переход на другую страницу-->
+
+       <section class="services">
     <h2 class="visually-hidden">Услуги</h2> <!-- Скрыт -->
       <ul>
           <li>
@@ -113,7 +119,7 @@
   <section>
     <fieldset>
     <h2 class="visually-hidden">Контактная информация</h2> <!-- Скрыт -->
-    <h3>NЁRDS DESIGN STUDIO </h3>
+    <h3>NЁRDS DESIGN STUDIO</h3>
     <p>
       наб. Реки Карповки,<br>
       5 лит П, Санкт-Петербург</p>
@@ -124,22 +130,42 @@
 
   <section>Напишите нам</section> <!-- Поп-ап -->
   <form action="https://echo.htmlacademy.ru" method="post">
-    <label for="name">Ваше имя:</label><br>
+    <p>
+      <label for="name">Ваше имя:</label><br>
     <input type="text" id="name" name="name" value="Имя Фамилия" required>
-        <label for="email">Ваш email:</label><br>
-    <input type="text" id="email" name="email" value="email@example.com" required><br>
+  </p>
+  <p>
+      <label for="email">Ваш email:</label><br>
+    <input type="email" id="email" name="email" value="email@example.com" required>
+  </p>
+  <p>
     <label for="letterText">Текст письма:</label>
-    <textarea id="letterText" name="LetterText" value="В свободной форме" rows="5" required></textarea>
+    <textarea id="letterText" name="LetterText" rows="5" value="В свободной форме" required></textarea></p>
       <div class="buttons">
-      <input type="submit" value="Отправить">
+        <button type="submit">Отправить</button>
+        <button type="button">Закрыть</button> <!-- Изменить кнопку на крестик закрытия окна -->
   </form>
 
   <section> КАРТА ЧЕРЕЗ JS  </section>
 
   <section>
+    <h3 class="visually-hidden">NЁRDS DESIGN STUDIO в социальных сетях - ссылки на социальные сети</h3> <!-- Скрыт -->
+    <ul>
+      <li>
+        <a href="#">Вконтакте</a>
+      </li>
+      <li>
+        <a href="#">Фейсбук</a>
+      </li>
+      <li>
+        <a href="#">Инстаграм</a>
+      </li>
+    </ul>
+  </section>
+
+  <section>
   <p>Давайте дружить, это выгодно!</p>
   <p>Скидка 10% для друзей из социальных сетей.</p>
-  <!-- Подвал сайта -->
  </section>
 </footer>
 </body>
