@@ -3,38 +3,235 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preload" href="/fonts/roboto.woff2" as="font">
     <title>HTML Academy: Нёрдс</title>
+    <link href="normalize.css" rel="stylesheet">
   </head>
-
-
-  <!-- Логотипы клиентских компаний -->
-
-  <a>
-    <img src="img\logo-2 1.svg" width="159.87" height="65,02" alt="Логотип барбершопа «Бородинский»">
-  </a> <!-- Иконка корзины -->
-  <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
   <body>
     <header class="main-header">
       <!-- Шапка сайта -->
       <nav>
-        <a>
-          <img src="img\nerds-logo.svg" width="159.87" height="65,02" alt="Логотип студии «Нёрдс»">
+        <a href="index.html" lang="ru">
+          <img src="img/nerds-logo.svg" width="156" height="65" alt="Логотип студии «Нёрдс»">
         </a>
         <ul>
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <a>
-          <img src="img\cart-icon.svg" width="159.87" height="65,02" alt="Иконка корзины">
+          <img src="img=/cart-icon.svg" width="156" height="65" alt="Иконка корзины">
         </a>    <!-- Иконка корзины -->
               <a href="#">Корзина</a>
         <!-- Навигация -->
       </nav>
     </header>
     <main>
-      <!-- Основное содержимое страницы -->
-      Магазин готовых шаблонов
+      <h1>Магазин готовых шаблонов</h1>
+
+      <section>
+        <h2>Фильтр товаров</h2>
+
+        Стоимость: <!-- Иконка СЛАЙДЕРА - урок 9 -->
+
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Сетка</legend>
+            <ul>
+              <li>
+                <input type="radio" name="product-group" value="adaptive" id="filter-adaptive">
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" name="product-group" value="fixed" id="filter-fixed" checked>
+                <label for="filter-cfixed">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" name="product-group" value="rubber" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <li>
+            <input type="checkbox" name="slider" id="filter-slidere" checked>
+            <label for="filter-aslider">Слайдер</label>
+          </li>
+          <li>
+            <input type="checkbox" name="advantages-block" id="filter-advantages-block" checked>
+            <label for="filter-advantages-block">Блок преимуществ</label>
+          </li>
+          <li>
+            <input type="checkbox" name="news" id="filter-news" checked>
+            <label for="filter-news">Новости</label>
+          </li>
+          <li>
+            <input type="checkbox" name="gallery" id="filter-gallery" checked>
+            <label for="filter-gallery">Галерея</label>
+          </li>
+          <li>
+            <input type="checkbox" name="basket" id="filter-basket" checked>
+            <label for="filter-basket">Корзина</label>
+          </li>
+        </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
+
+      <fieldset>  <!-- Список выбора над таблицей готовых макетов -->
+        <legend>Сортировать</legend>
+        <li>
+        <input type="checkbox" name="by-price" id="filter-by-price" checked>
+        <label for="filter-by-price">ПО ЦЕНЕ</label>
+      </li>
+      <li>
+        <input type="checkbox" name="by-type" id="filter-by-type" checked>
+        <label for="filter-by-type">ПО ТИПУ</label>
+      </li>
+      <li>
+        <input type="checkbox" name="by-name" id="filter-by-name" checked>
+        <label for="filter-by-name">ПО НАЗВАНИЮ</label>
+      </li>
+    </fieldset>
+
+
+      <section>   <!-- Tаблица готовых макетов -->
+        <h2>Список готовых шаблонов сайта</h2>
+        <ul>
+          <li>
+            <a href="#">  <!-- 1 Sedona -->
+              <h3>Sedona</h3>
+              <p>
+                <img src="img/product-1.jpg" width="358" height="578" alt="Сайт Sedona">
+              </p>
+            </a>
+            <p>
+              Информационный сайт<br>для туристов
+            </p>
+             <button type="button">9 900 &#8381;</button>
+          </li>
+
+          <li>
+            <a href="#"> <!-- 2 Pink App -->
+              <h3>Pink App</h3>
+
+              <img src="img/product-2.jpg" width="358" height="578" alt="Сайт Pink App">
+
+            </a>
+            <p>
+              Продуктовый лендинг<br>приложения для iOS и Android
+            </p>
+              <button type="button">9 900 &#8381;</button>
+            </p>
+          </li>
+
+          <li>
+            <a href="#"> <!-- 3  Барбершоп Бородинский БЕЗ КНОПКИ -->
+              <p>
+                <img src="img/product-1.jpg" width="358" height="578" alt="Сайт Барбершоп Бородинский">
+              </p>
+            </a>
+           <li>
+            <a href="#"> <!-- 4 Магазин Mishka БЕЗ КНОПКИ-->
+              <p>
+                <img src="img/product-1.jpg" width="358" height="578" alt="Сайт Магазина Mishka">
+              </p>
+            </a>
+            </li>
+
+          <li>
+            <a href="#"> <!-- 5 Магазин A+ обучающий сайт БЕЗ КНОПКИ -->
+              <p>
+                <img src="img/product-1.jpg" width="358" height="578" alt="Сайт курсов онлайн обучения A+">
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#"> <!-- 6 магазина крафтового кваса КВАСТ -->
+              <h3>КВАСТ</h3>
+              <p>
+                <img src="img/product-1.jpg" width="358" height="578" alt="Сайт магазина крафтового кваса КВАСТ">
+              </p>
+            </a>
+            <p>
+              Промо-сайт производителя<br>крафтового кваса
+            </p>
+             <button type="button">9 900 &#8381;</button>
+          </li>
+        </ul>
+
+        <ul> <!-- Пагинация -->
+          <li>
+            <a>1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">Следующая</a>  <!-- Отдельная кнопка, СДЕЛАТЬ -->
+          </li>
+        </ul>
+
+      </section>
+    </main>
+    <footer class="main-footer">
+      <section>
+        <fieldset>
+        <h2 class="visually-hidden">Контактная информация</h2> <!-- Скрыт -->
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <p>
+          наб. Реки Карповки,<br>
+          5 лит П, Санкт-Петербург</p>
+          Телефон: <a href="tel:+78005558628">+7 800 555-86-28</a><br>
+        <button type="button">Напишите нам</button><!-- Кнопка поп-апа - переход в Форму -->
+      </fieldset>
+    </section>
+    <section>Напишите нам <!-- Поп-ап -->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="name">Ваше имя:</label><br>
+        <input type="text" id="name" name="name" value="Имя Фамилия" required>
+      </p>
+      <p>
+          <label for="email">Ваш email:</label><br>
+        <input type="email" id="email" name="email" value="email@example.com" required>
+      </p>
+      <p>
+        <label for="letterText">Текст письма:</label>
+        <textarea id="letterText" name="LetterText" rows="5" value="В свободной форме" required></textarea></p>
+          <div class="buttons">
+            <button type="submit">Отправить</button>
+            <button type="button">Закрыть</button> <!-- Изменить кнопку на крестик закрытия окна -->
+      </div>
+    </form>
+    </section>
+      <section> КАРТА ЧЕРЕЗ JS  </section>
+    <section>
+        <h3 class="visually-hidden">NЁRDS DESIGN STUDIO в социальных сетях - ссылки на социальные сети</h3> <!-- Скрыт -->
+        <ul>
+          <li>
+            <a href="#">Вконтакте</a>
+          </li>
+          <li>
+            <a href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a href="#">Инстаграм</a>
+          </li>
+        </ul>
+      </section>
+    <section>
+      <p>Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+     </section>
+    </footer>
+    </body>
+    </html>
