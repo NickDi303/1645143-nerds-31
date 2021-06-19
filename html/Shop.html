@@ -47,7 +47,7 @@
               </li>
               <li>
                 <input type="radio" name="product-group" value="fixed" id="filter-fixed" checked>
-                <label for="filter-cfixed">Фиксированная</label>
+                <label for="filter-fixed">Фиксированная</label>
               </li>
               <li>
                 <input type="radio" name="product-group" value="rubber" id="filter-rubber">
@@ -57,9 +57,10 @@
           </fieldset>
           <fieldset>
             <legend>Особенности:</legend>
+          <ul>
             <li>
             <input type="checkbox" name="slider" id="filter-slidere" checked>
-            <label for="filter-aslider">Слайдер</label>
+            <label for="filter-slider">Слайдер</label>
           </li>
           <li>
             <input type="checkbox" name="advantages-block" id="filter-advantages-block" checked>
@@ -77,6 +78,7 @@
             <input type="checkbox" name="basket" id="filter-basket" checked>
             <label for="filter-basket">Корзина</label>
           </li>
+        </ul>
         </fieldset>
           <button type="submit">Показать</button>
         </form>
@@ -84,6 +86,7 @@
 
       <fieldset>  <!-- Список выбора над таблицей готовых макетов -->
         <legend>Сортировать</legend>
+        <ul>
         <li>
         <input type="checkbox" name="by-price" id="filter-by-price" checked>
         <label for="filter-by-price">ПО ЦЕНЕ</label>
@@ -96,9 +99,8 @@
         <input type="checkbox" name="by-name" id="filter-by-name" checked>
         <label for="filter-by-name">ПО НАЗВАНИЮ</label>
       </li>
+    </ul>
     </fieldset>
-
-
       <section>   <!-- Tаблица готовых макетов -->
         <h2>Список готовых шаблонов сайта</h2>
         <ul>
@@ -125,6 +127,7 @@
             <p>
               Продуктовый лендинг<br>приложения для iOS и Android
             </p>
+          <p>
               <button type="button">9 900 &#8381;</button>
             </p>
           </li>
@@ -194,7 +197,8 @@
         <button type="button">Напишите нам</button><!-- Кнопка поп-апа - переход в Форму -->
       </fieldset>
     </section>
-    <section>Напишите нам <!-- Поп-ап -->
+    <section>
+      <h2>Напишите нам</h2>  <!-- Поп-ап -->
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="name">Ваше имя:</label><br>
@@ -206,7 +210,8 @@
       </p>
       <p>
         <label for="letterText">Текст письма:</label>
-        <textarea id="letterText" name="LetterText" rows="5" value="В свободной форме" required></textarea></p>
+        <textarea id="letterText" name="LetterText" rows="5" placeholder="В свободной форме" required></textarea>
+      </p>
           <div class="buttons">
             <button type="submit">Отправить</button>
             <button type="button">Закрыть</button> <!-- Изменить кнопку на крестик закрытия окна -->
