@@ -33,6 +33,16 @@
        url("robotomedium.woff2") format("woff2"),
        url("robotobmedium.woff") format("woff");
 }
+@font-face { /*  italic bold */
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: italic;
+ /* Браузер сначала попробует найти шрифт локально */
+  src: local("Roboto"),
+       url("/fonts/roboto.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("/fonts/roboto.woff") format("woff");
+}
 
 /* ТОЛЬКО ОДИН ЭКРАН ПРОКРУТКИ
 Smartphones (portrait and landscape) ----------- */
