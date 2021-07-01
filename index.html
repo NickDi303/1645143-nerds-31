@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,14 +13,14 @@
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
       <!-- Шапка сайта -->
-      <nav>
-        <a>
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="49" alt="Логотип студии «Нёрдс»">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html" lang="ru">Магазин</a></li>
@@ -33,14 +33,14 @@
         <!-- Навигация -->
       </nav>
     </header>
-<main>
+<main class="container"м>
       <!-- Основное содержимое страницы -->
       <h1 class="visually-hidden">Интернет магазин «Nёrds» </h1> <!-- Скрыт -->
-      <section class="services">
+      <section class="features">
               <p>Долго, дорого, скрупулезно.</p>
               <p>Математически выверенный дизайн<br>
                 для вашего сайта или мобильного приложения.</p>
-                <button type="button">УЗНАТЬ БОЛЬШЕ</button><!-- Кнопка переход на другую страницу-->
+                <button class="button" type="button">УЗНАТЬ БОЛЬШЕ</button><!-- Кнопка переход на другую страницу-->
       </section>
                 <a>
                   <img src="img/nerds-index-slide1-1.png" width="300" height="146" alt="Математически выверенный дизайн для вашего сайта или мобильного приложения">
@@ -48,21 +48,21 @@
 
     <section class="services">
     <h2 class="visually-hidden">Услуги</h2> <!-- Скрыт -->
-      <ul>
-          <li>
+      <ul class="features-list">
+          <li class="feature-item">
         <h3>Вебсайты</h3>
         <a>
           <img src="img/illustration-1-1.jpg" width="300" height="146" alt="Иконка ноутбука">
         </a>    <!-- Ноут на красном фоне в JPEG -->
         <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
       </li>
-        <li>
+        <li class="feature-item">
         <h3>Приложения</h3>
         <a>
           <img src="img/illustration-2-1.svg" width="300" height="146" alt="Иконка с двумя телефонами">
         </a>    <!-- Телефоны на зеленом фоне в SVG -->
           <p>Покорите топ-10 приложений в AppStore и Google Play</p></li>
-        <li>
+        <li class="feature-item">
           <h3>Презентации</h3>
           <a>
             <img src="img/illustration-3-1.jpg" width="300" height="146" alt="Иконка монитора компьютера">
@@ -83,23 +83,23 @@
   <li>Слайдшоу и видео для корпоративных презентаций</li>
 </ul>
      </section>
-            <section>
+            <section class="caps">
               <a>
                 <img src="img/nerds-illustration-1.png" width="360" height="208" alt="Логотип студии «Нёрдс» с веселым фоном">
               </a>
-              <h2 class="caps">с 2004 года Любим точность во всем:</h2>
-              <ul>
-                <li>
+              <h2>с 2004 года Любим точность во всем:</h2>
+              <ul class="caps-list">
+                <li class="caps-item">
                   <p>146 &percnt;</p>
                   <p>Уровень самоотдачи</p>
                 </li>
 
-                <li>
+                <li class="caps-item">
                   <p>100 &percnt;</p>
                   <p>Соблюдение сроков</p>
                 </li>
 
-                <li>
+                <li class="caps-item">
                   <p>50 &percnt;</p>
                   <p>Минимальная предоплата</p>
                 </li>
@@ -132,28 +132,28 @@
     <p>
       наб. Реки Карповки,<br>
       5 лит П, Санкт-Петербург</p>
-      Телефон: <a href="tel:+78005558628">+7 800 555-86-28</a><br>
-    <button type="button">Напишите нам</button><!-- Кнопка поп-апа - переход в Форму -->
+      Телефон: <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a><br>
+    <button class="button" type="button">Напишите нам</button><!-- Кнопка поп-апа - переход в Форму -->
   </fieldset>
 </section>
-<section>
+<section class="write-to">
   <h2>Напишите нам</h2>  <!-- Поп-ап -->
   <form action="https://echo.htmlacademy.ru" method="post">
-    <p>
+    <p class="write-to-name">
       <label for="name">Ваше имя:</label><br>
     <input type="text" id="name" name="name" value="Имя Фамилия" required>
   </p>
-  <p>
+  <p class="write-to-email">
       <label for="email">Ваш email:</label><br>
     <input type="email" id="email" name="email" value="email@example.com" required>
   </p>
-  <p>
-    <label for="letterText">Текст письма:</label>
-    <textarea id="letterText" name="LetterText" rows="5" placeholder="В свободной форме" required></textarea>
+  <p class="write-to-letter-text">
+    <label for="letter-text">Текст письма:</label>
+    <textarea id="letter-text" name="LetterText" rows="5" placeholder="В свободной форме" required></textarea>
   </p>
       <div class="buttons">
-        <button type="submit">Отправить</button>
-        <button type="button">Закрыть</button> <!-- Изменить кнопку на крестик закрытия окна -->
+        <button class="button feedback-button feedback-button-submit" type="submit">Отправить</button>
+        <button class="button feedback-button feedback-button-close" type="button">Закрыть</button> <!-- Изменить кнопку на крестик закрытия окна -->
   </div>
 </form>
 </section>
@@ -187,7 +187,7 @@
       </li>
     </ul>
   </section>
- <section>
+ <section class="friendship">
   <p>Давайте дружить, это выгодно!</p>
   <p>Скидка 10% для друзей из социальных сетей.</p>
  </section>
