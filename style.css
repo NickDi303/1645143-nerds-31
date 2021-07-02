@@ -3,6 +3,26 @@
 :active — клик (мышью или с клавиатуры);
 :visited — посещённая ссылка;*/
 
+/* Variables */
+:root {
+  --basic-white: #FFFFFF;
+  --basic-red: #FB565A;
+  --basic-middle-red: #E74246;
+  --basic-extra-red: #D7373B;
+  --basic-green: #00CA74;
+  --basic-middle-green: #00BC6C;
+  --basic-extra-green: #00AA62;
+  --basic-yellow: #EFC849;
+  --basic-middle-yellow: #EAB534;
+  --basic-extra-yellow: #E5A722;
+  --basic-grey: #EEEEEE;
+  --basic-middle-grey: #DFDFDF;
+  --basic-extra-grey: #D5D5D5;
+  --basic-black: #000000;
+
+  --small-text: #283136;
+}
+
 
 @font-face {
   font-family: "Roboto";
@@ -103,14 +123,54 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
-  /* НА БУДУЩЕЕ
-  width: 550px;
+  min-width: 960px;
   margin: 0;
-  padding: 0 10px;
+  padding: 0;
   font-size: 16px;
-  line-height: 20px; */
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+    background-color: var(--basic-white);
 }
 
+.capital  /* Заглавные буквы */
+{
+text-transform: uppercase;
+}
+
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-white);
+ }
+
+.site-navigation {
+  list-style: none;
+}
+
+/* User navigation */
+
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-white);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-extra-dark);
+}
 .title { /* создаём жирный заголовок */
   font-weight: 700;
 }
@@ -131,11 +191,14 @@ p, i {
 	font-family: 'Roboto', sans-serif;
 }
 
-.caps /* Заглавные буквы */
-{
-  text-transform: uppercase;
+a {
+  text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 /* Спрятанные заголовки h1 и h2 */
 .visually-hidden {
 	position: absolute;
@@ -149,11 +212,10 @@ p, i {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 
-/* Отображение телефона */
+/* Отображение телефона
 a[href^="tel:"]
 {
   font-size: 16px;
   line-height: 32px;
   text-decoration: none;
-  color: #000000;
-}
+  color: #000000; } */
