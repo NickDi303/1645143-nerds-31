@@ -130,14 +130,8 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-black);
-    background-color: var(--basic-white);
+  background-color: var(--basic-white);
 }
-
-.capital  /* Заглавные буквы */
-{
-text-transform: uppercase;
-}
-
 
 /* Main navigation */
 
@@ -149,38 +143,29 @@ text-transform: uppercase;
   text-transform: uppercase;
 }
 
-.main-navigation-wrapper {
-  background-color: var(--basic-white);
- }
-
-.site-navigation {
+.site-navigation
+{
   list-style: none;
 }
 
-/* User navigation */
+/*  :hover — наведение мыши;
+:active — клик (мышью или с клавиатуры);
+:visited — посещённая ссылка;*/
 
-
-.site-navigation a,
-.user-navigation a {
-  color: var(--basic-white);
+.site-navigation a:hover
+{
+color: var(--basic-red);
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-  background-color: var(--basic-extra-dark);
-}
-.title { /* создаём жирный заголовок */
-  font-weight: 700;
+.site-navigation a:active
+{
+color: var(--basic-black);
+opacity: 0.3;
 }
 
-.text-italic { /* создаём наклонный текст */
-  font-style: italic;
-}
 
-.text-bold-italic { /* создаём жирный наклонный текст */
-  font-style: italic;
+.title /* создаём жирный заголовок */
+{
   font-weight: 700;
 }
 
@@ -199,6 +184,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.capital  /* Заглавные буквы */
+{
+text-transform: uppercase;
+}
+
 /* Спрятанные заголовки h1 и h2 */
 .visually-hidden {
 	position: absolute;
@@ -211,11 +202,12 @@ img {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+  }
 
-/* Отображение телефона
+
 a[href^="tel:"]
 {
   font-size: 16px;
   line-height: 32px;
   text-decoration: none;
-  color: #000000; } */
+  color: #000000; }
