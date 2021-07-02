@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preload" href="/fonts/roboto.woff2" as="font">
+    <meta charset="UTF-8">
     <title>HTML Academy: Нёрдс</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preload" href="/fonts/roboto.woff2" as="font">
+
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
+
   <body class="page-body">
     <header class="main-header">
       <!-- Шапка сайта -->
@@ -30,10 +32,9 @@
           <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
         </a>    <!-- Иконка корзины -->
               <a href="#">Корзина</a>
-        <!-- Навигация -->
-      </nav>
+     </nav>
     </header>
-<main class="container"м>
+<main class="container">
       <!-- Основное содержимое страницы -->
       <h1 class="visually-hidden">Интернет магазин «Nёrds» </h1> <!-- Скрыт -->
       <section class="features">
@@ -46,7 +47,7 @@
                   <img src="img/nerds-index-slide1-1.png" width="300" height="146" alt="Математически выверенный дизайн для вашего сайта или мобильного приложения">
                 </a>    <!-- Три телефона на фоне красных точек -->
 
-    <section class="services">
+    <section class="feature">
     <h2 class="visually-hidden">Услуги</h2> <!-- Скрыт -->
       <ul class="features-list">
           <li class="feature-item">
@@ -83,36 +84,35 @@
   <li>Слайдшоу и видео для корпоративных презентаций</li>
 </ul>
      </section>
-            <section class="caps">
+            <section class="value">
               <a>
                 <img src="img/nerds-illustration-1.png" width="360" height="208" alt="Логотип студии «Нёрдс» с веселым фоном">
               </a>
               <h2>с 2004 года Любим точность во всем:</h2>
-              <ul class="caps-list">
-                <li class="caps-item">
+              <ul class="value-list">
+                <li class="value-item">
                   <p>146 &percnt;</p>
                   <p>Уровень самоотдачи</p>
                 </li>
-
-                <li class="caps-item">
+                <li class="value-item">
                   <p>100 &percnt;</p>
                   <p>Соблюдение сроков</p>
                 </li>
-
-                <li class="caps-item">
+                <li class="value-item">
                   <p>50 &percnt;</p>
                   <p>Минимальная предоплата</p>
                 </li>
-
               </ul>
             </section>
-      <section class="companies">
+      <section class="clients">
           <h4 class="visually-hidden">Логотипы клиентов</h4> <!-- Скрыт - Лого разных компаний -->
           <section>
-           <figure>
-            <img src="img/logo_htmlacademy-1.png" width="199" height="57" alt="Логотип HTML Academy"> <a href="https://htmlacademy.ru/intensive/htmlcss"">HTML Academy</a></li>
+           <figure class="button">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo_htmlacademy-1.png" width="199" height="57" alt="Логотип HTML Academy">
+            </a>
            </figure>
-            <figure>
+           <figure>
                  <img src="img/logo-barbershop_borodinsky-1.png" width="209" height="90" alt="Логотип Барбершоп Бородинский>">
             </figure>
             <figure>
@@ -125,41 +125,41 @@
 </main>
 
 <footer class="main-footer">
-  <section>
+  <section class="footer-contacts">
     <fieldset>
-    <h2 class="visually-hidden footer-contacts">Контактная информация</h2> <!-- Скрыт -->
+    <h2 class="visually-hidden">Контактная информация</h2> <!-- Скрыт -->
     <h3>NЁRDS DESIGN STUDIO</h3>
     <p>
       наб. Реки Карповки,<br>
       5 лит П, Санкт-Петербург</p>
-      Телефон: <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a><br>
+      Телефон: <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a><br>
     <button class="button" type="button">Напишите нам</button><!-- Кнопка поп-апа - переход в Форму -->
   </fieldset>
 </section>
-<section class="write-to">
+<section class="writeTo modal-description">
   <h2>Напишите нам</h2>  <!-- Поп-ап -->
   <form action="https://echo.htmlacademy.ru" method="post">
-    <p class="write-to-name">
+    <p>
       <label for="name">Ваше имя:</label><br>
-    <input type="text" id="name" name="name" value="Имя Фамилия" required>
+    <input class="writeTo-name" type="text" id="name" name="name" value="Имя Фамилия" required>
   </p>
-  <p class="write-to-email">
+  <p>
       <label for="email">Ваш email:</label><br>
-    <input type="email" id="email" name="email" value="email@example.com" required>
+    <input class="writeTo-email" type="email" id="email" name="email" value="email@example.com" required>
   </p>
-  <p class="write-to-letter-text">
-    <label for="letter-text">Текст письма:</label>
-    <textarea id="letter-text" name="Letter-text" rows="5" placeholder="В свободной форме" required></textarea>
+  <p>
+    <label for="letterText">Текст письма:</label>
+    <textarea class="writeTo-letterText" id="letterText" name="letterText" rows="5" placeholder="В свободной форме" required></textarea>
   </p>
-      <div class="buttons">
-        <button class="button feedback-button feedback-button-submit" type="submit">Отправить</button>
-        <button class="button feedback-button feedback-button-close" type="button">Закрыть</button> <!-- Изменить кнопку на крестик закрытия окна -->
+      <div class="feedback-button">
+        <button class="feedback-button feedback-button-submit" type="submit">Отправить</button>
+        <button class="feedback-button feedback-button-close" type="button">Закрыть</button> <!-- Изменить кнопку на крестик закрытия окна -->
   </div>
 </form>
 </section>
-  <section> КАРТА ЧЕРЕЗ JS  </section>
-<section>
-    <h3 class="visually-hidden footer-social">NЁRDS DESIGN STUDIO в социальных сетях - ссылки на социальные сети</h3> <!-- Скрыт -->
+  <section class="modal modal-map">  <!-- Здесь будет карта --> </section>
+<section class="footer-social">
+    <h3 class="visually-hidden">NЁRDS DESIGN STUDIO в социальных сетях - ссылки на социальные сети</h3> <!-- Скрыт -->
     <ul>
       <li>
         <a class="social-button" href="#">

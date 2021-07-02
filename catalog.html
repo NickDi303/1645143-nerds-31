@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preload" href="/fonts/roboto.woff2" as="font">
+    <meta charset="UTF-8">
     <title>HTML Academy: Нёрдс</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preload" href="/fonts/roboto.woff2" as="font">
+
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
@@ -35,12 +36,13 @@
     </header>
     <main>
       <h1>Магазин готовых шаблонов</h1>
-
-      <section>
+      <section class="filter">
         <h2>Фильтр товаров</h2>
-
-        Стоимость: <!-- Иконка СЛАЙДЕРА - урок 9 -->
-
+      </section>
+      <section class="cost">
+      Стоимость: <!-- Иконка СЛАЙДЕРА - урок 9 -->
+      </section>
+      <section class="network">
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Сетка</legend>
@@ -60,7 +62,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Особенности:</legend>
+            <legend class="features">Особенности:</legend>
           <ul>
             <li>
             <input type="checkbox" name="slider" id="filter-slider" checked>
@@ -89,7 +91,7 @@
       </section>
 
       <fieldset>  <!-- Список выбора над таблицей готовых макетов -->
-        <legend>Сортировать</legend>
+        <legend class="sort">Сортировать</legend>
         <ul>
         <li>
         <input type="checkbox" name="by-price" id="filter-by-price" checked>
@@ -105,7 +107,7 @@
       </li>
     </ul>
     </fieldset>
-      <section>   <!-- Tаблица готовых макетов -->
+      <section class="templates">   <!-- Tаблица готовых макетов -->
         <h2>Список готовых шаблонов сайта</h2>
         <ul>
           <li>
