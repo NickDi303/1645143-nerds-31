@@ -119,6 +119,7 @@ and (min-width : 1824px) {
 /* Styles */
 }
 
+
 body {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
@@ -132,6 +133,7 @@ body {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
+
 
 /* Main navigation */
 
@@ -161,6 +163,55 @@ color: var(--basic-red);
 {
 color: var(--basic-black);
 opacity: 0.3;
+}
+
+.site-navigation a:focus
+{
+color: var(--basic-black);
+}
+
+.button {
+  font-size: 16px;
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: 3px;
+}
+
+/* Red buttons */
+.button-red:hover
+{
+color: var(--basic-red);
+}
+
+.button-red:active
+{
+color: var(--basic-middle-red);
+opacity: 0.3;
+}
+
+.button-red:focus
+{
+color: var(--basic-extra-red);
+}
+
+
+/* Features */
+
+.feature {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 24px;
+  line-height: 30px;
 }
 
 

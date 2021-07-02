@@ -37,16 +37,17 @@
 <main class="container">
       <!-- Основное содержимое страницы -->
       <h1 class="visually-hidden">Интернет магазин «Nёrds» </h1> <!-- Скрыт -->
+      <div class="slider-column">
       <section class="features">
               <p class="capital">Долго, дорого, скрупулезно.</p>
               <p>Математически выверенный дизайн<br>
                 для вашего сайта или мобильного приложения.</p>
-                <button class="button" type="button">УЗНАТЬ БОЛЬШЕ</button><!-- Кнопка переход на другую страницу-->
+                <button class="button button-red" type="button">УЗНАТЬ БОЛЬШЕ</button><!-- Кнопка переход на другую страницу-->
       </section>
                 <a>
                   <img src="img/nerds-index-slide1-1.png" width="300" height="146" alt="Математически выверенный дизайн для вашего сайта или мобильного приложения">
                 </a>    <!-- Три телефона на фоне красных точек -->
-
+      </div>
     <section class="feature">
     <h2 class="visually-hidden">Услуги</h2> <!-- Скрыт -->
       <ul class="features-list">
@@ -56,19 +57,29 @@
           <img src="img/illustration-1-1.jpg" width="300" height="146" alt="Иконка ноутбука">
         </a>    <!-- Ноут на красном фоне в JPEG -->
         <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+        <p>
+          <button class="button button-red" type="button">ЗАКАЗАТЬ</button>
+        </p>
       </li>
         <li class="feature-item">
         <h3 class="capital">Приложения</h3>
         <a>
           <img src="img/illustration-2-1.svg" width="300" height="146" alt="Иконка с двумя телефонами">
         </a>    <!-- Телефоны на зеленом фоне в SVG -->
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p></li>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <p>
+            <button class="button button-green" type="button">ЗАКАЗАТЬ</button>
+          </p>
+        </li>
         <li class="feature-item">
           <h3 class="capital">Презентации</h3>
           <a>
             <img src="img/illustration-3-1.jpg" width="300" height="146" alt="Иконка монитора компьютера">
           </a>    <!-- Монитор компьютера на желтом фоне в JPEG -->
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <p>
+            <button class="button button-yellow" type="button">ЗАКАЗАТЬ</button>
+          </p>
         </li>
       </ul>
     </section>
@@ -107,7 +118,7 @@
       <section class="clients">
           <h4 class="visually-hidden">Логотипы клиентов</h4> <!-- Скрыт - Лого разных компаний -->
           <section>
-           <figure class="button">
+           <figure class="academy-link">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo_htmlacademy-1.png" width="199" height="57" alt="Логотип HTML Academy">
             </a>
@@ -152,7 +163,7 @@
     <textarea class="writeTo-letterText" id="letterText" name="letterText" rows="5" placeholder="В свободной форме" required></textarea>
   </p>
       <div class="feedback-button">
-        <button class="feedback-button feedback-button-submit" type="submit">Отправить</button>
+        <button class="button feedback-button feedback-button-submit" type="submit">Отправить</button>
         <button class="feedback-button feedback-button-close" type="button">Закрыть</button> <!-- Изменить кнопку на крестик закрытия окна -->
   </div>
 </form>
