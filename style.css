@@ -134,6 +134,9 @@ body {
   background-color: var(--basic-white);
 }
 
+.style-none {  /* Обнуление стилей */
+  list-style: none;
+}
 
 /* Main navigation */
 
@@ -143,11 +146,6 @@ body {
   font-weight: 500;
   color: var(--basic-black);
   text-transform: uppercase;
-}
-
-.site-navigation
-{
-  list-style: none;
 }
 
 /*  :hover — наведение мыши;
@@ -214,11 +212,37 @@ color: var(--basic-extra-red);
   line-height: 30px;
 }
 
+/* Index columns */
+
+.index-columns {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-position: 0 0;
+}
+
+ .index-columns h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.numbers-45
+{
+font-size: 45px;
+line-height: 64px;
+}
+
+.persent-26
+{
+font-size: 26px;
+line-height: 40px;
+margin-top: auto;
+}
 
 .title /* создаём жирный заголовок */
 {
   font-weight: 700;
 }
+
 
 h1 {
 	font-family: 'Roboto Bold', sans-serif;
