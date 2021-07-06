@@ -134,11 +134,70 @@ body {
   background-color: var(--basic-white);
 }
 
-.style-none {  /* Обнуление стилей */
-  list-style: none;
+.logo-link {
+	display: inline-block;
+	width: 160px;
+	height: 65px;
 }
 
-/* Main navigation */
+.logo-link:hover { /* :hover — наведение мыши */
+opacity: 0.7;
+}
+
+.logo-link:active { /* :active — клик (мышью или с клавиатуры) */
+opacity: 0.3;
+}
+
+.logo-link img {
+	width: 100%;
+	height: auto;
+}
+
+.style-none {  /* ---------- Обнуление стилей  ---------- */
+  list-style: none;
+  /* font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: 3px; */
+}
+
+.site-navigation-list {
+	margin-left: -40px;
+}
+
+.site-navigation-item:not(:last-child) {
+	margin-right: 47px;
+}
+
+.site-navigation-item a,
+.user-navigation-item a {
+	position: relative;
+	display: inline-block;
+	font-weight: 500;
+	line-height: 30px;
+	color: var(--basic-black);
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.site-navigation-item a:hover,
+.user-navigation-item a:hover {
+  color: var(--basic-red);
+}
+
+.site-navigation-item a:active,
+.user-navigation-item a:active
+{
+	color: rgba(0, 0, 0, 0.3);
+}
+
+/* ------- Main navigation ----------*/
 
 .main-navigation {
   line-height: 30px;
@@ -147,7 +206,7 @@ body {
   text-transform: uppercase;
 }
 
-.site-navigation a:hover /* Кнопки навигации и Корзина */
+.site-navigation a:hover /* --------- Кнопки навигации и Корзина  ---------- */
 {
 color: var(--basic-black);
 }
@@ -163,6 +222,10 @@ opacity: 0.3;
 color: var(--basic-black);
 }
 
+/* --------- Buttons GENERAL --------- */
+/*  :hover — наведение мыши;
+:active — клик (мышью или с клавиатуры);
+:visited — посещённая ссылка;*/
 .button {
   font-size: 16px;
   text-align: center;
@@ -173,12 +236,6 @@ color: var(--basic-black);
   border: 3px;
 }
 
-/*  :hover — наведение мыши;
-:active — клик (мышью или с клавиатуры);
-:visited — посещённая ссылка;*/
-
-
-/* Buttons GENERAL*/
 .button:hover /* :hover — наведение мыши */
 {
 background-color: var(--basic-middle-red);
@@ -187,12 +244,13 @@ background-color: var(--basic-middle-red);
 .button:active /*:active — клик (мышью или с клавиатуры) */
 {
 background-color: var(--basic-extra-red);
+border: 1px solid var(--basic-black);
 box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+color: rgba(255, 255, 255, 0.3);
 border-radius: 3px;
-color: rgba(0%, 0%, 0%, 0.3);
 }
 
-/* Red button "УЗНАТЬ БОЛЬШЕ" */
+/*  ---------- Red button "УЗНАТЬ БОЛЬШЕ"  ---------- */
 .button-know-more {
   width: 240px;
   height: 50px;
@@ -202,18 +260,18 @@ color: rgba(0%, 0%, 0%, 0.3);
 
   .write-us
   {
-    Width: 219px;
+    width: 219px;
     height: 50px;
     top: 265px;
     left: 190px;
     }
 
-    .popup-send
+  .popup-send
   {
-    width: 259px;
-height: 50px;
-left: 341px;
-top: 2161px;
+   width: 259px;
+   left: 341px;
+   top: 2161px;
+   height: 50px;
   }
 
   .button-red,
@@ -225,7 +283,7 @@ top: 2161px;
     top: 922px;
   }
 
-/* GREEN buttons */
+/*  ---------- GREEN button  ---------- */
 .button-green {
   text-align: center;
   color: var(--basic-white);
@@ -236,29 +294,24 @@ top: 2161px;
 
 .button-green:hover /* :hover — наведение мыши */
 {
-background-color: var(--basic-green);
+background-color: var(--basic-middle-green);
 }
 
-.button-green:focus
+/* .button-green:focus
 {
-background-color: var(--basic-extra-green);
+background-color: var(--basic-extra-green); */
 
-}
 .button-green:active /*:active — клик (мышью или с клавиатуры) */
 {
-background: #00AA62;
+background: var(--basic-extra-green);
 border: 1px solid #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-color: rgba(0%, 0%, 0%, 0.3);
+color: rgba(255, 255, 255, 0.3);
 border-radius: 3px;
 }
-/* background-color: var(--basic-middle-green);
-background: rgba(0, 0, 0, 0.25)
-box-shadow: inset 0px 3px 0p;
-color: rgba(0%, 0%, 0%, 0.3);;
-}*/
 
-/* Yellow buttons */
+
+/*  ---------- Yellow buttons  ---------- */
 .button-yellow {
   text-align: center;
   color: var(--basic-white);
@@ -269,35 +322,29 @@ color: rgba(0%, 0%, 0%, 0.3);;
 
 .button-yellow:hover /* :hover — наведение мыши */
 {
-background-color: var(--basic-yellow);
+background-color: var(--basic-middle-yellow);
 }
 
-.button-yellow:focus
+/* .button-yellow:focus
 {
 background-color: var(--basic-extra-yellow);
+} */
 
-}
 .button-yellow:active /*:active — клик (мышью или с клавиатуры) */
 {
-background: #00AA62;
+background: var(--basic-extra-yellow);
 border: 1px solid #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-/* color: rgba(0%, 0%, 0%, 0.3); */
 color: rgba(255, 255, 255, 0.3);
 border-radius: 3px;
 }
-/* background-color: var(--basic-middle-green);
-background: rgba(0, 0, 0, 0.25)
-box-shadow: inset 0px 3px 0p;
-color: rgba(0%, 0%, 0%, 0.3);;
-}*/
 
-.opacity-text:active { /*:active — клик (мышью или с клавиатуры) */
+.opacity-text:active { /*:active — клик (мышью или с клавиатуры) НЕ ИСПОЛЬЗУЕТСЯ */
 opacity: 0.3;
 }
 
-/* CATALOG PAGES */
-/* Catalog page - 9900 buttons */
+/*  ---------- CATALOG PAGES  ---------- */
+/*  ---------- Catalog page - 9900 РУБ buttons  ---------- */
 .catalog-button {
 width: 200px;
 height: 50px;
@@ -318,7 +365,14 @@ box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 border-radius: 3px;
 }
 
-/* Catalog page - ПОКАЗАТЬ button */
+/* .button-yellow:active  ОБРАЗЕЦ
+background: var(--basic-extra-yellow);
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: rgba(255, 255, 255, 0.3);
+border-radius: 3px; */
+
+/*  ---------- Catalog page - ПОКАЗАТЬ button  ---------- */
 .catalog-show{
 color: var(--basic-black);
 background-color: var(--basic-grey);
@@ -341,7 +395,7 @@ box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 border-radius: 3px;
 }
 
-/* ЛОГОТИПЫ ПАРТНЕРОВ НА INDEX PAGE */
+/*  ---------- ЛОГОТИПЫ ПАРТНЕРОВ НА INDEX PAGE  ---------- */
 .academy-link
 {
   opacity: 0.2;
@@ -358,7 +412,7 @@ border-radius: 3px;
   }
 
 
-/* Features */
+/*  ---------- Features  ---------- */
 
 .feature {
   list-style: none;
@@ -373,7 +427,7 @@ border-radius: 3px;
   line-height: 30px;
 }
 
-/* Index columns */
+/*  ---------- Index columns  ---------- */
 
 .index-columns {
   color: var(--basic-black);
@@ -399,7 +453,7 @@ line-height: 40px;
 margin-top: auto;
 }
 
-.title /* создаём жирный заголовок */
+.title /*  ---------- создаём жирный заголовок  ---------- */
 {
   font-weight: 700;
 }
@@ -421,7 +475,7 @@ img {
   height: auto;
 }
 
-.capital  /* Заглавные буквы */
+.capital  /* ---------- Заглавные буквы  ---------- */
 {
 text-transform: uppercase;
 }
