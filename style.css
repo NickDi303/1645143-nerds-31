@@ -152,13 +152,7 @@ body {
 color: var(--basic-black);
 }
 
-
-/*  :hover — наведение мыши;
-:active — клик (мышью или с клавиатуры);
-:visited — посещённая ссылка; */
-
-
-.site-navigation a:active
+.site-navigation a:active /*:active — клик (мышью или с клавиатуры) */
 {
 background-color: var(--basic-black);
 opacity: 0.3;
@@ -195,6 +189,7 @@ background-color: var(--basic-middle-red);
 background-color: var(--basic-extra-red);
 box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 border-radius: 3px;
+color: rgba(0%, 0%, 0%, 0.3);
 }
 
 /* Red button "УЗНАТЬ БОЛЬШЕ" */
@@ -203,6 +198,22 @@ border-radius: 3px;
   height: 50px;
   left: 176px;
   top: 399px;
+  }
+
+  .write-us
+  {
+    Width: 219px;
+    height: 50px;
+    top: 265px;
+    left: 190px;
+    }
+
+    .popup-send
+  {
+    width: 259px;
+height: 50px;
+left: 341px;
+top: 2161px;
   }
 
   .button-red,
@@ -214,7 +225,7 @@ border-radius: 3px;
     top: 922px;
   }
 
-/* Green buttons */
+/* GREEN buttons */
 .button-green {
   text-align: center;
   color: var(--basic-white);
@@ -223,7 +234,7 @@ border-radius: 3px;
   background-color: var(--basic-green);
   }
 
-.button-green:hover
+.button-green:hover /* :hover — наведение мыши */
 {
 background-color: var(--basic-green);
 }
@@ -233,23 +244,119 @@ background-color: var(--basic-green);
 background-color: var(--basic-extra-green);
 
 }
-.button-green:active
+.button-green:active /*:active — клик (мышью или с клавиатуры) */
 {
-
-  background: #00AA62;
+background: #00AA62;
 border: 1px solid #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: rgba(0%, 0%, 0%, 0.3);
 border-radius: 3px;
 }
 /* background-color: var(--basic-middle-green);
-background: rgba(0, 0, 0, 0.25);
+background: rgba(0, 0, 0, 0.25)
 box-shadow: inset 0px 3px 0p;
-color: rgba(255, 255, 255, 0.3);
+color: rgba(0%, 0%, 0%, 0.3);;
 }*/
 
-.opacity-text:active {
+/* Yellow buttons */
+.button-yellow {
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-yellow);
+  }
+
+.button-yellow:hover /* :hover — наведение мыши */
+{
+background-color: var(--basic-yellow);
+}
+
+.button-yellow:focus
+{
+background-color: var(--basic-extra-yellow);
+
+}
+.button-yellow:active /*:active — клик (мышью или с клавиатуры) */
+{
+background: #00AA62;
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+/* color: rgba(0%, 0%, 0%, 0.3); */
+color: rgba(255, 255, 255, 0.3);
+border-radius: 3px;
+}
+/* background-color: var(--basic-middle-green);
+background: rgba(0, 0, 0, 0.25)
+box-shadow: inset 0px 3px 0p;
+color: rgba(0%, 0%, 0%, 0.3);;
+}*/
+
+.opacity-text:active { /*:active — клик (мышью или с клавиатуры) */
 opacity: 0.3;
 }
+
+/* CATALOG PAGES */
+/* Catalog page - 9900 buttons */
+.catalog-button {
+width: 200px;
+height: 50px;
+left: 620px;
+top: 1014px;
+border-radius: 3px;
+}
+.catalog-button:hover /* :hover — наведение мыши */
+{
+background-color: var(--basic-middle-red);
+}
+
+.catalog-button:active /*:active — клик (мышью или с клавиатуры) */
+{
+color: var(--basic-white);
+background-color: var(--basic-extra-red);
+box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+border-radius: 3px;
+}
+
+/* Catalog page - ПОКАЗАТЬ button */
+.catalog-show{
+color: var(--basic-black);
+background-color: var(--basic-grey);
+width: 260px;
+height: 50px;
+left: 253px;
+top: 1986px;
+border-radius: 3px;
+}
+.catalog-show:hover /* :hover — наведение мыши */
+{
+background-color: var(--basic-middle-grey);
+}
+
+.catalog-show:active /*:active — клик (мышью или с клавиатуры) */
+{
+color: var(--basic-black);
+background-color: var(--basic-extra-grey);
+box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+border-radius: 3px;
+}
+
+/* ЛОГОТИПЫ ПАРТНЕРОВ НА INDEX PAGE */
+.academy-link
+{
+  opacity: 0.2;
+}
+
+.academy-link:hover /* :hover — наведение мыши */
+  {
+    opacity: 100%;
+  }
+
+  .academy-link:active /*:active — клик (мышью или с клавиатуры) */
+  {
+    opacity: 0.1;
+  }
+
 
 /* Features */
 
