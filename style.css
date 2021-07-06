@@ -141,25 +141,26 @@ body {
 /* Main navigation */
 
 .main-navigation {
-  font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   color: var(--basic-black);
   text-transform: uppercase;
 }
 
+.site-navigation a:hover /* Кнопки навигации и Корзина */
+{
+color: var(--basic-black);
+}
+
+
 /*  :hover — наведение мыши;
 :active — клик (мышью или с клавиатуры);
-:visited — посещённая ссылка;*/
+:visited — посещённая ссылка; */
 
-.site-navigation a:hover
-{
-color: var(--basic-red);
-}
 
 .site-navigation a:active
 {
-color: var(--basic-black);
+background-color: var(--basic-black);
 opacity: 0.3;
 }
 
@@ -170,7 +171,6 @@ color: var(--basic-black);
 
 .button {
   font-size: 16px;
-  font: inherit;
   text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
@@ -179,23 +179,77 @@ color: var(--basic-black);
   border: 3px;
 }
 
-/* Red buttons */
-.button-red:hover
+/*  :hover — наведение мыши;
+:active — клик (мышью или с клавиатуры);
+:visited — посещённая ссылка;*/
+
+
+/* Buttons GENERAL*/
+.button:hover /* :hover — наведение мыши */
 {
-color: var(--basic-red);
+background-color: var(--basic-middle-red);
 }
 
-.button-red:active
+.button:active /*:active — клик (мышью или с клавиатуры) */
 {
-color: var(--basic-middle-red);
+background-color: var(--basic-extra-red);
+box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+border-radius: 3px;
+}
+
+/* Red button "УЗНАТЬ БОЛЬШЕ" */
+.button-know-more {
+  width: 240px;
+  height: 50px;
+  left: 176px;
+  top: 399px;
+  }
+
+  .button-red,
+  .button-green,
+  .button-yellow {
+    width: 160px;
+    height: 50px;
+    left: 940px;
+    top: 922px;
+  }
+
+/* Green buttons */
+.button-green {
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-green);
+  }
+
+.button-green:hover
+{
+background-color: var(--basic-green);
+}
+
+.button-green:focus
+{
+background-color: var(--basic-extra-green);
+
+}
+.button-green:active
+{
+
+  background: #00AA62;
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 3px;
+}
+/* background-color: var(--basic-middle-green);
+background: rgba(0, 0, 0, 0.25);
+box-shadow: inset 0px 3px 0p;
+color: rgba(255, 255, 255, 0.3);
+}*/
+
+.opacity-text:active {
 opacity: 0.3;
 }
-
-.button-red:focus
-{
-color: var(--basic-extra-red);
-}
-
 
 /* Features */
 
