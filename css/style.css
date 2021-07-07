@@ -5,6 +5,7 @@
 
 /* Variables */
 :root {
+  --basic-black: #000000;
   --basic-white: #FFFFFF;
   --basic-red: #FB565A;
   --basic-middle-red: #E74246;
@@ -17,10 +18,10 @@
   --basic-extra-yellow: #E5A722;
   --basic-grey: #EEEEEE;
   --basic-middle-grey: #DFDFDF;
-  --basic-extra-grey: #D5D5D5;
-  --basic-black: #000000;
+  --basic-extra-grey: #3b3232;
 
   --small-text: #283136;
+
 }
 
 
@@ -132,6 +133,10 @@ body {
   font-weight: 400;
   color: var(--basic-black);
   background-color: var(--basic-white);
+ }
+
+.small-text-color {
+color: var(--small-text);
 }
 
 .logo-link {
@@ -167,13 +172,13 @@ opacity: 0.3;
   border: 3px; */
 }
 
-.site-navigation-list {
+/*.site-navigation-list {
 	margin-left: -40px;
 }
 
 .site-navigation-item:not(:last-child) {
 	margin-right: 47px;
-}
+} */
 
 .site-navigation-item a,
 .user-navigation-item a {
@@ -194,7 +199,8 @@ opacity: 0.3;
 .site-navigation-item a:active,
 .user-navigation-item a:active
 {
-	color: rgba(0, 0, 0, 0.3);
+	color: var(--basic-black);
+  opacity: 0.3;
 }
 
 /* ------- Main navigation ----------*/
@@ -452,6 +458,49 @@ font-size: 26px;
 line-height: 40px;
 margin-top: auto;
 }
+
+/* Appointment         ---------- заготовка для ПОП-АПА Барбершоп. Базовая стилизация главной страницы  Шаг  17 / 27 -----------
+
+.appointment-item input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid var(--basic-black);
+}
+
+.appointment-item input:focus {
+  border-color: var(--special);
+}
+*/
+
+                                                              /* ---------- Footer  ----------- */
+
+/* .main-footer    заливка футера желтым
+{
+  background-color: var(--basic-middle-yellow);
+} */
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+ }
+
+.footer-adress,
+footer-phone {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.footer-discount {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+ }
+
 
 .title /*  ---------- создаём жирный заголовок  ---------- */
 {
