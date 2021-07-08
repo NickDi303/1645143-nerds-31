@@ -777,6 +777,44 @@ border-color: var(--basic-middle-red);
 /*  ---------- CATALOG PAGES  ---------- */
 /*  ---------- CATALOG PAGES  ---------- */
 
+.page-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+
+/* ----------  Filters - Квадратные Фильтры (Особенности:) ---------- */
+
+.filter legend {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.filter ul {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--small-text);
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--small-text);
+}
+
+.filter-input-checkbox + label:active /*:active — клик (мышью или с клавиатуры) */
+  {
+    color: var(--small-text);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    mix-blend-mode: normal;
+  }
+
+
 /*  ---------- Catalog page - 9900 РУБ buttons  ---------- */
 .catalog-button {
   width: 200px;

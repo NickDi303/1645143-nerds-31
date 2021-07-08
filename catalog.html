@@ -14,28 +14,30 @@
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body>
+
+  <body class="page-body catalog-page">
     <header class="main-header">
       <!-- Шапка сайта -->
-      <nav>
-        <a href="index.html">
+      <nav class="main-navigation">
+        <a class="logo-link" href="inpage-titledex.html">
           <img src="img/nerds-logo.svg" width="160" height="49" alt="Логотип студии «Нёрдс»">
         </a>
-        <ul>
+        <ul class="style-none site-navigation-item">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li><a href="catalog.html" lang="ru">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <a>
-          <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
-        </a>    <!-- Иконка корзины -->
-              <a href="#">Корзина</a>
-        <!-- Навигация -->
+        <ul class="style-none site-navigation-item">
+          <img src="img/cart-icon.svg" width="15" h5eight="15" alt="Иконка корзины"> <!-- Иконка корзины -->
+        <a class="site-navigation href="#">Корзина</a>
+        </ul>
       </nav>
     </header>
+
+
     <main class="catalog">
-      <h1>Магазин готовых шаблонов</h1>
+      <h1 class="">Магазин готовых шаблонов</h1>
       <section class="filter">
         <h2>Фильтр товаров</h2>
       </section>
@@ -61,9 +63,20 @@
               </li>
             </ul>
           </fieldset>
+
+          <!--  Filters - Квадратные Фильтры (Особенности:)
+          <legend>Производители:</legend>
+          <ul>
+            <li class="filter-option filter-checkbox">
+              <input class="filter-input-checkbox filter-input" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+              <label for="filter-baxter-of-california">Baxter of California</label>
+            </li>  -->
+
+
+
           <fieldset>
             <legend class="features capital">Особенности:</legend>
-          <ul class="style-none">
+          <ul class="style-none filter">
             <li>
             <input type="checkbox" name="slider" id="filter-slider" checked>
             <label for="filter-slider">Слайдер</label>
