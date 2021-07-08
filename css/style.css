@@ -126,7 +126,10 @@ and (min-width : 1824px) {
 /* Styles */
 }
 
-/*  ---------- ОСНОВНЫЕ ПАРАМЕТРЫ - GENERAL SETTINGS ------------ */
+
+/*  ---------- ОСНОВНЫЕ ПАРАМЕТРЫ - GENERAL ------------ */
+/*  ---------- ОСНОВНЫЕ ПАРАМЕТРЫ - GENERAL ------------ */
+/*  ---------- ОСНОВНЫЕ ПАРАМЕТРЫ - GENERAL ------------ */
 
 
 body {
@@ -146,7 +149,6 @@ body {
 {
   font-weight: 700;
 }
-
 
 h1 {
 	font-family: 'Roboto Bold', sans-serif;
@@ -169,10 +171,153 @@ img {
 text-transform: uppercase;
 }
 
-.small-text-color {
+.visually-hidden {  /* ---------- Спрятанные заголовки ---------- */
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	border: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+  }
+
+.style-none {  /* ---------- Обнуление стилей  ---------- */
+  list-style: none;
+ }
+  .small-text-color {
   color: var(--small-text);
 }
 
+              /* --------- Buttons GENERAL --------- */
+              /* --------- Buttons GENERAL --------- */
+              /* --------- Buttons GENERAL --------- */
+
+/*  :hover — наведение мыши;
+:active — клик (мышью или с клавиатуры);
+:visited — посещённая ссылка;*/
+
+.button {
+  font-size: 16px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: 3px;
+}
+
+.button:hover, /* :hover — наведение мыши */
+.button:focus {
+background-color: var(--basic-middle-red);
+}
+
+.button:active /*:active — клик (мышью или с клавиатуры) */
+{
+background-color: var(--basic-extra-red);
+border: 1px solid var(--basic-black);
+box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+color: rgba(255, 255, 255, 0.3);
+border-radius: 3px;
+}
+
+
+/*  ---------- Red button "УЗНАТЬ БОЛЬШЕ"  ---------- */
+.button-know-more {
+  width: 240px;
+  height: 50px;
+  left: 176px;
+  top: 399px;
+  }
+
+  .write-us
+  {
+    width: 219px;
+    height: 50px;
+    top: 265px;
+    left: 190px;
+    }
+
+  .popup-send
+  {
+   width: 259px;
+   left: 341px;
+   top: 2161px;
+   height: 50px;
+  }
+
+  .button-red,
+  .button-green,
+  .button-yellow {
+    width: 160px;
+    height: 50px;
+    left: 940px;
+    top: 922px;
+  }
+
+
+/*  ---------- GREEN button  ---------- */
+.button-green {
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-green);
+  }
+
+.button-green:hover, /* :hover — наведение мыши */
+.button-green:focus {
+background-color: var(--basic-middle-green);
+}
+
+.button-green:active /*:active — клик (мышью или с клавиатуры) */
+{
+background: var(--basic-extra-green);
+border: 1px solid var(--basic-black);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: rgba(255, 255, 255, 0.3);
+border-radius: 3px;
+}
+
+
+/*  ---------- Yellow buttons  ---------- */
+.button-yellow {
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-yellow);
+  }
+
+.button-yellow:hover, /* :hover — наведение мыши */
+.button-yellow:focus
+{
+background-color: var(--basic-middle-yellow);
+}
+
+.button-yellow:active /*:active — клик (мышью или с клавиатуры) */
+{
+background: var(--basic-extra-yellow);
+border: 1px solid var(--basic-black);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: rgba(255, 255, 255, 0.3);
+border-radius: 3px;
+}
+
+.opacity-text:active { /*:active — клик (мышью или с клавиатуры) НЕ ИСПОЛЬЗУЕТСЯ */
+opacity: 0.3;
+}
+
+
+
+/* ------------------ Шапка сайта - HEADER--------------------- */
+/* ------------------ Шапка сайта - HEADER--------------------- */
+/* ------------------ Шапка сайта - HEADER--------------------- */
+
+
+/* Логотип - LOGO */
 .logo-link {
 	display: inline-block;
 	width: 160px;
@@ -193,9 +338,7 @@ opacity: 0.3;
 	height: auto;
 }
 
-.style-none {  /* ---------- Обнуление стилей  ---------- */
-  list-style: none;
- }
+
 
 /*.site-navigation-list {
 	margin-left: -40px;
@@ -254,7 +397,7 @@ opacity: 0.3;
 }
 
 
-                        /* --------------------- Слайдер ----------------------- */
+/* --------------------- Slider - Слайдер ----------------------- */
 .slider {
 	position: relative;
 	background-color: var(--basic-grey);
@@ -369,7 +512,10 @@ opacity: 0.3;
 	display: block;
 }
 
+
 /*--------------- Услуги ---------------*/
+/*--------------- Услуги ---------------*/
+
 .servises {
   font-size: 24px;
   line-height: 30px;
@@ -379,172 +525,8 @@ opacity: 0.3;
 
 }
 
-
-
-/* --------- Buttons GENERAL --------- */
-/*  :hover — наведение мыши;
-:active — клик (мышью или с клавиатуры);
-:visited — посещённая ссылка;*/
-.button {
-  font-size: 16px;
-  text-align: center;
-  color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(--basic-red);
-  border: 3px;
-}
-
-.button:hover, /* :hover — наведение мыши */
-.button:focus {
-background-color: var(--basic-middle-red);
-}
-
-.button:active /*:active — клик (мышью или с клавиатуры) */
-{
-background-color: var(--basic-extra-red);
-border: 1px solid var(--basic-black);
-box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-color: rgba(255, 255, 255, 0.3);
-border-radius: 3px;
-}
-
-/*  ---------- Red button "УЗНАТЬ БОЛЬШЕ"  ---------- */
-.button-know-more {
-  width: 240px;
-  height: 50px;
-  left: 176px;
-  top: 399px;
-  }
-
-  .write-us
-  {
-    width: 219px;
-    height: 50px;
-    top: 265px;
-    left: 190px;
-    }
-
-  .popup-send
-  {
-   width: 259px;
-   left: 341px;
-   top: 2161px;
-   height: 50px;
-  }
-
-  .button-red,
-  .button-green,
-  .button-yellow {
-    width: 160px;
-    height: 50px;
-    left: 940px;
-    top: 922px;
-  }
-
-/*  ---------- GREEN button  ---------- */
-.button-green {
-  text-align: center;
-  color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(--basic-green);
-  }
-
-.button-green:hover, /* :hover — наведение мыши */
-.button-green:focus {
-background-color: var(--basic-middle-green);
-}
-
-/* .button-green:focus
-{
-background-color: var(--basic-extra-green); */
-
-.button-green:active /*:active — клик (мышью или с клавиатуры) */
-{
-background: var(--basic-extra-green);
-border: 1px solid var(--basic-black);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-color: rgba(255, 255, 255, 0.3);
-border-radius: 3px;
-}
-
-/*  ---------- Yellow buttons  ---------- */
-.button-yellow {
-  text-align: center;
-  color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(--basic-yellow);
-  }
-
-.button-yellow:hover, /* :hover — наведение мыши */
-.button-yellow:focus
-{
-background-color: var(--basic-middle-yellow);
-}
-
-.button-yellow:active /*:active — клик (мышью или с клавиатуры) */
-{
-background: var(--basic-extra-yellow);
-border: 1px solid var(--basic-black);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-color: rgba(255, 255, 255, 0.3);
-border-radius: 3px;
-}
-
-.opacity-text:active { /*:active — клик (мышью или с клавиатуры) НЕ ИСПОЛЬЗУЕТСЯ */
-opacity: 0.3;
-}
-
-/*  ---------- CATALOG PAGES  ---------- */
-/*  ---------- Catalog page - 9900 РУБ buttons  ---------- */
-.catalog-button {
-width: 200px;
-height: 50px;
-left: 620px;
-top: 1014px;
-border-radius: 3px;
-}
-.catalog-button:hover, /* :hover — наведение мыши */
-.catalog-button:focus
-{
-background-color: var(--basic-middle-red);
-}
-
-.catalog-button:active /*:active — клик (мышью или с клавиатуры) */
-{
-color: var(--basic-white);
-background-color: var(--basic-extra-red);
-box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-border-radius: 3px;
-}
-
-
-/*  ---------- Catalog page - ПОКАЗАТЬ button  ---------- */
-.catalog-show{
-color: var(--basic-black);
-background-color: var(--basic-grey);
-width: 260px;
-height: 50px;
-left: 253px;
-top: 1986px;
-border-radius: 3px;
-}
-.catalog-show:hover, /* :hover — наведение мыши */
-.catalog-show:focus {
-background-color: var(--basic-middle-grey);
-}
-
-.catalog-show:active /*:active — клик (мышью или с клавиатуры) */
-{
-color: var(--basic-black);
-background-color: var(--basic-extra-grey);
-box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-border-radius: 3px;
-}
-
-/*  ---------- ЛОГОТИПЫ ПАРТНЕРОВ НА INDEX PAGE  ---------- */
+/* -------------  Лого партнеров  ---------------*/
+/* -------------  Лого партнеров  ---------------*/
 .academy-link
 {
   opacity: 0.2;
@@ -653,6 +635,15 @@ footer-phone {
   display: flex;
   align-items: center;
  }
+
+ a[href^="tel:"]
+{
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
 
  .friendship-title {
   font-family: Roboto;
@@ -775,25 +766,65 @@ border-color: var(--basic-middle-red);
   opacity: 0.3;
 }
 
-/* Спрятанные заголовки h1 и h2 */
-.visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	border: 0;
-	white-space: nowrap;
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
-	overflow: hidden;
+
+
+
+
+/*  ---------- CATALOG PAGES  ---------- */
+/*  ---------- CATALOG PAGES  ---------- */
+/*  ---------- CATALOG PAGES  ---------- */
+/*  ---------- CATALOG PAGES  ---------- */
+/*  ---------- CATALOG PAGES  ---------- */
+/*  ---------- CATALOG PAGES  ---------- */
+
+/*  ---------- Catalog page - 9900 РУБ buttons  ---------- */
+.catalog-button {
+  width: 200px;
+  height: 50px;
+  left: 620px;
+  top: 1014px;
+  border-radius: 3px;
+  }
+  .catalog-button:hover, /* :hover — наведение мыши */
+  .catalog-button:focus
+  {
+  background-color: var(--basic-middle-red);
+  }
+
+  .catalog-button:active /*:active — клик (мышью или с клавиатуры) */
+  {
+  color: var(--basic-white);
+  background-color: var(--basic-extra-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border-radius: 3px;
   }
 
 
-a[href^="tel:"]
-{
-  font-size: 16px;
-  line-height: 32px;
-  text-decoration: none;
+  /*  ---------- Catalog page - ПОКАЗАТЬ button  ---------- */
+  .catalog-show{
   color: var(--basic-black);
-}
+  background-color: var(--basic-grey);
+  width: 260px;
+  height: 50px;
+  left: 253px;
+  top: 1986px;
+  border-radius: 3px;
+  }
+  .catalog-show:hover, /* :hover — наведение мыши */
+  .catalog-show:focus {
+  background-color: var(--basic-middle-grey);
+  }
+
+  .catalog-show:active /*:active — клик (мышью или с клавиатуры) */
+  {
+  color: var(--basic-black);
+  background-color: var(--basic-extra-grey);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border-radius: 3px;
+  }
+
+/* ----------  СТИЛИЗАЦИЯ  --------- */
+
+
+
+
