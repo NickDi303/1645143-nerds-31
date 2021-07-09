@@ -20,6 +20,7 @@
   --basic-middle-grey: #DFDFDF;
   --basic-extra-grey: #3b3232;
 
+  /* Local colors and buttons */
   --small-text: #283136;
   --slider-color: #C1C1C1;
   --footer-address-color: #666666;
@@ -27,6 +28,8 @@
   --social-button-color: #E1E1E1;
   --login-form-color: #D7DCDE;
   --login-form-box-color: #B4B9BB;
+  --catalog-show-button: #D5D5D5;
+  --catalog-backgroung-color: #С4C4C4;
 
 }
 
@@ -803,19 +806,62 @@ border-color: var(--basic-middle-red);
 }
 
 .filter-input-checkbox:hover + label,
-.filter-input-checkbox:focus + label {
+.filter-input-checkbox:focus + label,
+.filter-input-checkbox + label:active {
   color: var(--small-text);
 }
 
-.filter-input-checkbox + label:active /*:active — клик (мышью или с клавиатуры) */
+/* Реализовано выше. ДОПИСАТЬ НЕАКТИВНЫЙ ПУНКТ
+.filter-input-checkbox + label:active :active — клик (мышью или с клавиатуры)
   {
     color: var(--small-text);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
     mix-blend-mode: normal;
+   }  */
+
+
+
+ /* ---------- Templates - Tаблица готовых макетов ------------*/
+/* ----------  СТИЛИЗАЦИЯ КАРТОЧЕК ТОВАРОВ  --------- */
+
+.catalog-item { /* Цвет задника при отсутствии прогрузки картинки товара */
+  background-color: var(--catalog-backgroung-color);
+}
+
+.catalog-item a {
+  color: var(--basic-black);
+}
+
+
+/* -------  Templates ----------*/
+
+.templates a {
+  color: var(--basic-black);
+}
+
+.templates-title { /* Название товара в карточке товара */
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+color: var(--basic-black);
+}
+
+.templates-text { /* Текст к товару в карточке товара */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--footer-address-color)
   }
 
 
-/*  ---------- Catalog page - 9900 РУБ buttons  ---------- */
+/*  ---------- Catalog page - "9900 РУБ" buttons  ---------- */
 .catalog-button {
   width: 200px;
   height: 50px;
@@ -838,7 +884,7 @@ border-color: var(--basic-middle-red);
   }
 
 
-  /*  ---------- Catalog page - ПОКАЗАТЬ button  ---------- */
+  /*  ---------- Catalog page - "ПОКАЗАТЬ" button  ---------- */
   .catalog-show{
   color: var(--basic-black);
   background-color: var(--basic-grey);
@@ -851,17 +897,19 @@ border-color: var(--basic-middle-red);
   .catalog-show:hover, /* :hover — наведение мыши */
   .catalog-show:focus {
   background-color: var(--basic-middle-grey);
+  border-radius: 3px;
   }
 
   .catalog-show:active /*:active — клик (мышью или с клавиатуры) */
   {
   color: var(--basic-black);
-  background-color: var(--basic-extra-grey);
+  background-color: var(--catalog-show-button);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   border-radius: 3px;
+  /* opacity: 0.3; */
   }
 
-/* ----------  СТИЛИЗАЦИЯ  --------- */
+
 
 
 

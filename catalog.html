@@ -37,7 +37,7 @@
 
 
     <main class="catalog">
-      <h1 class="">Магазин готовых шаблонов</h1>
+      <h1>Магазин готовых шаблонов</h1>
       <section class="filter">
         <h2>Фильтр товаров</h2>
       </section>
@@ -64,7 +64,7 @@
             </ul>
           </fieldset>
 
-          <!--  Filters - Квадратные Фильтры (Особенности:)
+          <!--  Filters - Квадратные Фильтры (Особенности:) образец из Барбершопа
           <legend>Производители:</legend>
           <ul>
             <li class="filter-option filter-checkbox">
@@ -78,7 +78,7 @@
             <legend class="features capital">Особенности:</legend>
           <ul class="style-none filter">
             <li>
-            <input type="checkbox" name="slider" id="filter-slider" checked>
+            <input class="filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
             <label for="filter-slider">Слайдер</label>
           </li>
           <li>
@@ -86,15 +86,15 @@
             <label for="filter-advantages-block">Блок преимуществ</label>
           </li>
           <li>
-            <input type="checkbox" name="news" id="filter-news" checked>
+            <input class="filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
             <label for="filter-news">Новости</label>
           </li>
           <li>
-            <input type="checkbox" name="gallery" id="filter-gallery" checked>
+            <input class="filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery" checked>
             <label for="filter-gallery">Галерея</label>
           </li>
           <li>
-            <input type="checkbox" name="basket" id="filter-basket" checked>
+            <input class="filter-input-checkbox filter-input" type="checkbox" name="basket" id="filter-basket" checked>
             <label for="filter-basket">Корзина</label>
           </li>
         </ul>
@@ -120,64 +120,56 @@
       </li>
     </ul>
     </fieldset>
-      <section class="templates">   <!-- Tаблица готовых макетов -->
 
-        <h2>Список готовых шаблонов сайта</h2>
+
+    <section class="templates">   <!-- Tаблица готовых макетов -->
+      <h2 class="visually-hidden">Список готовых шаблонов сайта</h2>
         <ul class="style-none">
           <li><!-- 1 Sedona -->
             <p><img src="img/catalog/img-sedona-1.jpg" width="358" height="578" alt="Сайт Sedona"></p>
-              <h2 class="capital">Sedona</h2>
-              <p>Информационный сайт<br>для туристов</p>
-              <a href="#"><button class="button catalog-button" type="button">9 900 &#8381;</button></a>
+              <a href="#"><h2 class="capital templates-title">Sedona</h2>
+              <p class="templates-text">Информационный сайт<br>для туристов</p></a>
+              <button class="button catalog-button" type="button">9 900 &#8381;</button>
           </li>
 
           <li>
             <a href="#"> <!-- 2 Pink App -->
-              <h2 class="capital">Pink App</h2>
-
+              <h2 class="capital templates-title">Pink App</h2>
               <img src="img/catalog/img-pink-1.jpg" width="358" height="578" alt="Сайт Pink App">
-
-            </a>
-            <p>
-              Продуктовый лендинг<br>приложения для iOS и Android
-            </p>
-          <p>
-              <button class="button catalog-button" type="button">9 900 &#8381;</button>
-            </p>
+              <p class="templates-text">Продуктовый лендинг<br>приложения для iOS и Android</p></a>
+            <button class="button catalog-button" type="button">9 900 &#8381;</button>
           </li>
 
           <li>
-            <a href="#"> <!-- 3  Барбершоп Бородинский БЕЗ КНОПКИ -->
-              <p>
+            <a href="#"> <!-- 3  Барбершоп Бородинский  -->
+              <h2 class="capital templates-title">Barbershop</h2>
                 <img src="img/catalog/img-barbershop-1.jpg" width="358" height="578" alt="Сайт Барбершоп Бородинский">
-              </p>
-            </a>
+                <p class="templates-text">Сайт салона красоты.<br>Для мужчин, да.</p></a>
+                <button class="button catalog-button" type="button">9 900 &#8381;</button>
+              </li>
+
            <li>
-            <a href="#"> <!-- 4 Магазин Mishka БЕЗ КНОПКИ-->
-              <p>
-                <img src="img/catalog/img-mishka-1.jpg" width="358" height="578" alt="Сайт Магазина Mishka">
-              </p>
-            </a>
-            </li>
+            <a href="#"> <!-- 4 Магазин Mishka -->
+              <h2 class="capital templates-title">MISHKA</h2>
+                <img src="img/catalog/img-mishka-1.jpg" width="358" height="578" alt="Сайт интернет-магазина Mishka">
+                <p class="templates-text">Интернет-магазин<br>вязаных игрушек</p></a>
+                <button class="button catalog-button" type="button">9 900 &#8381;</button>
+              </li>
+
 
           <li>
-            <a href="#"> <!-- 5 Магазин A+ обучающий сайт БЕЗ КНОПКИ -->
-              <p>
-                <img src="img/catalog/img-aplus-1.jpg" width="358" height="578" alt="Сайт курсов онлайн обучения A+">
-              </p>
-            </a>
-          </li>
+            <a href="#"> <!-- 5 Магазин A+ обучающий сайт -->
+              <h2 class="capital templates-title">A Plus</h2>
+                <img src="img/catalog/img-aplus-1.jpg" width="358" height="578" alt="Сайт курсов A+">
+                <p class="templates-text">Лендинг курсов повышения<br>квалификации</p></a>
+                <button class="button catalog-button" type="button">9 900 &#8381;</button>
+              </li>
 
           <li>
             <a href="#"> <!-- 6 магазина крафтового кваса КВАСТ -->
-              <h2 class="capital">КВАСТ</h2>
-              <p>
-                <img src="img/catalog/img-kvast-1.jpg" width="358" height="578" alt="Сайт магазина крафтового кваса КВАСТ">
-              </p>
-            </a>
-            <p>
-              Промо-сайт производителя<br>крафтового кваса
-            </p>
+              <h2 class="capital templates-title">КВАСТ</h2>
+              <img src="img/catalog/img-kvast-1.jpg" width="358" height="578" alt="Сайт магазина крафтового кваса КВАСТ">
+            <p class="templates-text">Промо-сайт производителя<br>крафтового кваса</p></a>
              <button class="button catalog-button" type="button">9 900 &#8381;</button>
           </li>
         </ul>
