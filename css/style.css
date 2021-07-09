@@ -309,10 +309,6 @@ color: rgba(255, 255, 255, 0.3);
 border-radius: 3px;
 }
 
-.opacity-text:active { /*:active — клик (мышью или с клавиатуры) НЕ ИСПОЛЬЗУЕТСЯ */
-opacity: 0.3;
-}
-
 
 
 /* ------------------ Шапка сайта - HEADER--------------------- */
@@ -838,17 +834,6 @@ border-color: var(--basic-middle-red);
   color: var(--basic-black);
 }
 
-.templates-title { /* Название товара в карточке товара */
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 30px;
-display: flex;
-align-items: center;
-text-align: center;
-color: var(--basic-black);
-}
-
 .templates-text { /* Текст к товару в карточке товара */
   font-style: normal;
   font-weight: normal;
@@ -859,6 +844,30 @@ color: var(--basic-black);
   text-align: center;
   color: var(--footer-address-color)
   }
+
+.templates-title { /* Название товара в карточке товара */
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 30px;
+/* display: flex; */
+align-items: center;
+text-align: center;
+color: var(--basic-black);
+}
+
+.templates-title:hover,
+.templates-title:focus {
+  color: var(--basic-red);
+}
+
+.templates-title:active {
+color: var(--basic-black);
+mix-blend-mode: normal;
+opacity: 0.3;
+}
+
+
 
 
 /*  ---------- Catalog page - "9900 РУБ" buttons  ---------- */
@@ -893,7 +902,11 @@ color: var(--basic-black);
   left: 253px;
   top: 1986px;
   border-radius: 3px;
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
   }
+
   .catalog-show:hover, /* :hover — наведение мыши */
   .catalog-show:focus {
   background-color: var(--basic-middle-grey);
@@ -902,15 +915,42 @@ color: var(--basic-black);
 
   .catalog-show:active /*:active — клик (мышью или с клавиатуры) */
   {
-  color: var(--basic-black);
+  /* color: var(--basic-black); */
   background-color: var(--catalog-show-button);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  border-radius: 3px;
-  /* opacity: 0.3; */
+  color: rgba(0, 1, 1, 0.3);
   }
 
+  /* ----------  Pagination - Пагинация ---------- */
+
+  .pagination-item,
+  .pagination-item a {
+    color: var(--basic-black);
+    background-color: var(--basic-grey);
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    /*box-sizing: border-box;*/
+    align-items: center;
+    text-align: center;
+  }
+
+  .pagination-item a:hover,
+  .pagination-item a:focus {
+     background-color: var(--basic-middle-grey);
+     color: var(--basic-black);
+     mix-blend-mode: normal;
+     border-radius: 3px;
+  }
+
+  .pagination-item a:active {
+    color: rgba(0, 1, 1, 0.3);
+    /* box-sizing: border-box;*/
+    background: var(--catalog-show-button);
+    border-radius: 3px;
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 
 
-
-
-
+  }
