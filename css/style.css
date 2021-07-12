@@ -135,17 +135,23 @@ and (min-width : 1824px) {
 /*  ---------- ОСНОВНЫЕ ПАРАМЕТРЫ - GENERAL ------------ */
 
 
-body {
+.page-body {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
-  min-width: 960px;
+  min-width: 1440px;
   margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
  }
 
  .title /*  ---------- создаём жирный заголовок  ---------- */
@@ -167,6 +173,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 .capital  /* ---------- Заглавные буквы  ---------- */
@@ -193,6 +200,15 @@ text-transform: uppercase;
   .small-text-color {
   color: var(--small-text);
 }
+
+/* --------- Grid ---------- */
+
+.page {
+  height: 100%;
+}
+
+
+
 
               /* --------- Buttons GENERAL --------- */
               /* --------- Buttons GENERAL --------- */
@@ -309,6 +325,12 @@ color: rgba(255, 255, 255, 0.3);
 border-radius: 3px;
 }
 
+.main-header {
+  margin-bottom: 66px;
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  display: grid;
+  justify-content: stretch;
+}
 
 
 /* ------------------ Шапка сайта - HEADER--------------------- */
@@ -317,11 +339,15 @@ border-radius: 3px;
 
 
 /* Логотип - LOGO */
+
+
 .logo-link {
-	display: inline-block;
-	width: 160px;
+	/* display: inline-block; */
+ 	width: 160px;
 	height: 65px;
-}
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  justify-self: left;
+  }
 
 .logo-link:hover, /* :hover — наведение мыши */
 .logo-link:focus {
@@ -339,13 +365,15 @@ opacity: 0.3;
 
 
 
-/*.site-navigation-list {
-	margin-left: -40px;
+.site-navigation-item {
+  margin-left: -40px;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  display: inline-block;
 }
 
 .site-navigation-item:not(:last-child) {
 	margin-right: 47px;
-} */
+}
 
 .site-navigation-item a,
 .user-navigation-item a {
@@ -380,7 +408,16 @@ opacity: 0.3;
   line-height: 30px;
   font-weight: 500;
   color: var(--basic-black);
-  text-transform: uppercase;
+  display: grid;
+  justify-content: stretch;
+  /* display: flex;
+  align-items: center;
+  text-align: right; */
+  }
+
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
 }
 
 .site-navigation a:hover, /* --------- Кнопки навигации и Корзина  ---------- */
