@@ -122,6 +122,12 @@ a {
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
 img {
   max-width: 100%;
   height: auto;
@@ -149,7 +155,7 @@ text-transform: uppercase;
 .style-none {  /* ---------- Обнуление стилей  ---------- */
   list-style: none;
  }
-  .small-text-color {
+.small-text-color {
   color: var(--small-text);
 }
 
@@ -283,6 +289,13 @@ border-radius: 3px;
   outline: 5px solid rgba(0, 255, 0, 0.3); /* ТЕСТОВОЕ, СТЕРЕТЬ!!!*/
   display: grid;
   justify-content: stretch;
+
+
+  grid-template-columns: 1fr 1fr min-content;
+  margin: 0;
+  padding: 0 49px 10px;
+  width: 65;
+  height: 1160;
 }
 
 
@@ -358,6 +371,28 @@ opacity: 0.3;
 /* ------- Main navigation ----------*/
 
 .main-navigation {
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--basic-black);
+  display: grid;
+  justify-content: stretch;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: min-content 1fr min-content;
+}
+
+.site-navigation-item:not(:last-child) {
+  margin-right: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 45px;
+  }
+
+
+/* main-navigation {
 
   line-height: 30px;
   font-weight: 500;
@@ -365,12 +400,15 @@ opacity: 0.3;
   display: grid;
   justify-content: stretch;
   text-align: center;
-  }
+  grid-template-columns: 1fr min-content;   }
 
 .main-navigation-wrapper {
   display: grid;
-  grid-template-columns: 1fr min-content;
-}
+  grid-template-columns: min-content 1fr min-content;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 45px;
+} */
 
 .site-navigation a:hover, /* --------- Кнопки навигации и Корзина  ---------- */
 .site-navigation a:focus
@@ -507,7 +545,7 @@ opacity: 0.3;
 .servises {
   font-size: 24px;
   line-height: 30px;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   color: var(--basic-black);
 
@@ -518,6 +556,13 @@ opacity: 0.3;
 .academy-link
 {
   opacity: 0.2;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 1159;
+  height: 184;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .academy-link:hover, /* :hover — наведение мыши */
@@ -536,6 +581,15 @@ opacity: 0.3;
   list-style: none;
 }
 
+.features-list {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+margin: 0;
+padding: 0 10px;
+width: 1100;
+height: 347;
+}
+
 .feature-item {
   text-align: center;
 }
@@ -546,6 +600,14 @@ opacity: 0.3;
 }
 
 /*  ---------- Index columns  ---------- */
+
+.aboutUs {
+display: grid;
+grid-template-columns: 1fr 360px;
+margin: 0;
+padding: 0 10px;
+width: 1174;
+}
 
 .index-columns {
   color: var(--basic-black);
