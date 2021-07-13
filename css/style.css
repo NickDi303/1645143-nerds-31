@@ -31,6 +31,12 @@
   --catalog-show-button: #D5D5D5;
   --catalog-backgroung-color: #С4C4C4;
 
+  --box-shadow-color-01: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  --box-shadow-color-025: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --box-shadow-color-black-03: rgba(255, 255, 255, 0.3);
+  --box-shadow-color-04: inset 0px 20px 40px rgba(0, 0, 0, 0.4);
+  --one-more-color-03: rgba(0, 1, 1, 0.3);
+
 }
 
 
@@ -74,60 +80,6 @@
        url("/fonts/roboto.woff") format("woff");
 }
 
-/* ТОЛЬКО ОДИН ЭКРАН ПРОКРУТКИ
-Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-/* Styles */
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen
-and (min-width : 321px) {
-/* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen
-and (max-width : 320px) {
-/* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-/* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-/* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 1224px) {
-/* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {
-/* Styles */
-}
 
 
 /*  ---------- ОСНОВНЫЕ ПАРАМЕТРЫ - GENERAL ------------ */
@@ -173,7 +125,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
+ /*  display: block; */
 }
 
 .capital  /* ---------- Заглавные буквы  ---------- */
@@ -210,6 +162,7 @@ text-transform: uppercase;
 
 
 
+
               /* --------- Buttons GENERAL --------- */
               /* --------- Buttons GENERAL --------- */
               /* --------- Buttons GENERAL --------- */
@@ -237,8 +190,8 @@ background-color: var(--basic-middle-red);
 {
 background-color: var(--basic-extra-red);
 border: 1px solid var(--basic-black);
-box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-color: rgba(255, 255, 255, 0.3);
+box-shadow: var(--box-shadow-color-01);
+color: var(--box-shadow-color-black-03);
 border-radius: 3px;
 }
 
@@ -295,8 +248,8 @@ background-color: var(--basic-middle-green);
 {
 background: var(--basic-extra-green);
 border: 1px solid var(--basic-black);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-color: rgba(255, 255, 255, 0.3);
+box-shadow: var(--box-shadow-color-025);
+color: var(--box-shadow-color-black-03);
 border-radius: 3px;
 }
 
@@ -320,14 +273,14 @@ background-color: var(--basic-middle-yellow);
 {
 background: var(--basic-extra-yellow);
 border: 1px solid var(--basic-black);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-color: rgba(255, 255, 255, 0.3);
+box-shadow: var(--box-shadow-color-025);
+color: var(--box-shadow-color-black-03);
 border-radius: 3px;
 }
 
 .main-header {
   margin-bottom: 66px;
-  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline: 5px solid rgba(0, 255, 0, 0.3); /* ТЕСТОВОЕ, СТЕРЕТЬ!!!*/
   display: grid;
   justify-content: stretch;
 }
@@ -345,7 +298,7 @@ border-radius: 3px;
 	/* display: inline-block; */
  	width: 160px;
 	height: 65px;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline: 5px solid rgba(255, 0, 0, 0.3);  /* ТЕСТОВОЕ, СТЕРЕТЬ!!!*/
   justify-self: left;
   }
 
@@ -367,8 +320,8 @@ opacity: 0.3;
 
 .site-navigation-item {
   margin-left: -40px;
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  display: inline-block;
+  outline: 5px 5px solid rgba(255, 0, 0, 0.3);  /* ТЕСТОВОЕ, СТЕРЕТЬ!!!*/
+  /* display: inline-block; */
 }
 
 .site-navigation-item:not(:last-child) {
@@ -405,14 +358,13 @@ opacity: 0.3;
 /* ------- Main navigation ----------*/
 
 .main-navigation {
+
   line-height: 30px;
   font-weight: 500;
   color: var(--basic-black);
   display: grid;
   justify-content: stretch;
-  /* display: flex;
-  align-items: center;
-  text-align: right; */
+  text-align: center;
   }
 
 .main-navigation-wrapper {
@@ -714,7 +666,7 @@ footer-phone {
 .social-button:active /*:active — клик (мышью или с клавиатуры) */
 {
   background-color: var(--basic-extra-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: var(--box-shadow-color-01);
   background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
   opacity: 0.3;
 }
@@ -737,7 +689,7 @@ footer-phone {
 	box-sizing: border-box;
 	padding: 65px 100px;
 	margin: auto;
-	box-shadow: inset 0px 20px 40px rgba(0, 0, 0, 0.4);
+	box-shadow: var(--box-shadow-color-04);
  }
 
  .modal h2 {
@@ -797,7 +749,7 @@ border-color: var(--basic-middle-red);
 .social-button:active /*:active — клик (мышью или с клавиатуры) */
 {
   background-color: var(--basic-extra-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: var(--box-shadow-color-01);
   background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
   opacity: 0.3;
 }
@@ -925,7 +877,7 @@ opacity: 0.3;
   {
   color: var(--basic-white);
   background-color: var(--basic-extra-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: var(--box-shadow-color-01);
   border-radius: 3px;
   }
 
@@ -954,8 +906,8 @@ opacity: 0.3;
   {
   /* color: var(--basic-black); */
   background-color: var(--catalog-show-button);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(0, 1, 1, 0.3);
+  box-shadow: var(--box-shadow-color-01);
+  color: var(--one-more-color-03);
   }
 
   /* ----------  Pagination - Пагинация ---------- */
@@ -983,11 +935,108 @@ opacity: 0.3;
   }
 
   .pagination-item a:active {
-    color: rgba(0, 1, 1, 0.3);
+    color: var(--one-more-color-03);
     /* box-sizing: border-box;*/
     background: var(--catalog-show-button);
     border-radius: 3px;
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-
-
+    box-shadow: var(--box-shadow-color-01);
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ТОЛЬКО ОДИН ЭКРАН ПРОКРУТКИ
+Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
