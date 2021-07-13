@@ -8,10 +8,12 @@
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet">
     <link rel="preload" href="/fonts/roboto.woff2" as="font">
-
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="favicon/180.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
 
@@ -36,6 +38,25 @@
       </div>
     </nav>
     </header>
+
+<!--
+<body>
+
+  <header class="main_header">
+    <div class="header container">
+      <a class="header_logo" href="index.html">
+        <img src="img/nerds-logo.svg" width="65" height="160" alt="Логотипнёрдс">
+      </a>
+      <nav class="header_nav">
+        <a class="header_nav_link header_link_hover active_link" href="#">Студия</a>
+        <a class="header_nav_link header_link_hover" href="#">Клиенты</a>
+        <a class="header_nav_link header_link_hover" href="catalog.html">Магазин</a>
+        <a class="header_nav_link header_link_hover" href="#">Контакты</a>
+      </nav>
+      <a class="header_cart_link header_link_hover" href="cart.html">Корзина</a>
+    </div>
+  </header>
+-->
 
 
 <main class="container">
@@ -122,18 +143,22 @@
         </li>
       </ul>
     </section>
-    <section class="aboutUs index-columns aboutUsGrid">
-          <h2 class="visually-hidden">О студии</h2> <!-- Скрыт -->
-          <p class="about-title"> Мы — маленькая, но гордая веб-студия из Краснодара</p>
-          <p class="small-text-color">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+
+
+  <div class="aboutUsGrid">
+    <section class="aboutUs index-columns">
+      <h2 class="visually-hidden">О студии</h2> <!-- Скрыт -->
+        <p class="about-title"> Мы — маленькая, но гордая веб-студия из Краснодара</p>
+        <p class="small-text-color">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
              превыше креатива. Работаем не покладая рук, как роботы.</p>
-<h4 class="capital small-text-color">Выполняем заказы на разработку:</h4>
- <ul class="style-none small-text-color">
-  <li>Веб-сайтов любой сложности</li>
-  <li>Мобильных приложений для iOS и Android</li>
-  <li>Слайдшоу и видео для корпоративных презентаций</li>
-</ul>
-        <div class="value">
+          <h4 class="capital small-text-color">Выполняем заказы на разработку:</h4>
+           <ul class="style-none small-text-color">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+
+        <section class="value">
               <a>
                 <img src="img/nerds-illustration-1.png" width="360" height="208" alt="Логотип студии «Нёрдс» с веселым фоном">
               </a>
@@ -161,8 +186,9 @@
                   <p class="small-text-color nerd-img-text">Минимальная предоплата</p>
                 </li>
               </ul>
-              </div>
-            </section>
+              </section>
+        </div>
+
 
        <section class="clients">
           <h4 class="visually-hidden">Логотипы клиентов</h4> <!-- Скрыт - Лого разных компаний -->
@@ -186,6 +212,7 @@
       </section>
 </main>
 
+
 <footer class="main-footer">
   <section class="footer-contacts">
     <fieldset>
@@ -198,6 +225,7 @@
     <button class="button write-us" type="button">Напишите нам</button><!-- Кнопка поп-апа - переход в Форму -->
   </fieldset>
 </section>
+
 <section class="modal writeTo modal-description">
   <h2>Напишите нам</h2>  <!-- Поп-ап -->
   <form action="https://echo.htmlacademy.ru" method="post">
@@ -219,6 +247,7 @@
   </div>
 </form>
 </section>
+
   <section class="map">
     <a>
       <img src="img/map.jpg" width="1440" height="416" alt="Карта с адресом">
@@ -227,6 +256,7 @@
     <!-- Карта Google <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822446556344!2d30.315220215900048!3d59.968268666670326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1625594204754!5m2!1sru!2sru" width="1440" height="416" style="border:0;" allowfullscreen="" loading="lazy">
     </iframe> -->
      </section>
+
 <section class="footer-social">
     <h3 class="visually-hidden">NЁRDS DESIGN STUDIO в социальных сетях - ссылки на социальные сети</h3> <!-- Скрыт -->
     <ul class="style-none socials-list">
@@ -257,9 +287,10 @@
       </li>
     </ul>
   </section>
+
  <section class="friendship">
-  <p class="friendship-title">Давайте дружить, это выгодно!</p>
-  <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
+   <p class="friendship-title">Давайте дружить, это выгодно!</p>
+   <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
  </section>
 </footer>
 </body>
