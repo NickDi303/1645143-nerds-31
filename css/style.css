@@ -291,11 +291,11 @@ border-radius: 3px;
   justify-content: stretch;
 
 
-  grid-template-columns: 1fr 1fr min-content;
-  margin: 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr min-content;
+  margin: 0 10px;
   padding: 0 49px 10px;
-  width: 65;
-  height: 1160;
+  width: 1160;
+  height: 65;
 }
 
 
@@ -378,7 +378,7 @@ opacity: 0.3;
   justify-content: stretch;
   align-items: center;
   text-align: center;
-  grid-template-columns: min-content 1fr min-content;
+  grid-template-columns: 160px auto 1fr;
 }
 
 .site-navigation-item:not(:last-child) {
@@ -556,7 +556,9 @@ opacity: 0.3;
 .academy-link
 {
   opacity: 0.2;
+}
 
+.clients {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 1159;
@@ -601,7 +603,7 @@ height: 347;
 
 /*  ---------- Index columns  ---------- */
 
-.aboutUs {
+.aboutUsGrid {
 display: grid;
 grid-template-columns: 1fr 360px;
 margin: 0;
