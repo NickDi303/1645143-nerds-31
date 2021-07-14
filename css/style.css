@@ -36,7 +36,6 @@
   --box-shadow-color-black-03: rgba(255, 255, 255, 0.3);
   --box-shadow-color-04: inset 0px 20px 40px rgba(0, 0, 0, 0.4);
   --one-more-color-03: rgba(0, 1, 1, 0.3);
-
 }
 
 
@@ -107,23 +106,6 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-
-}
-
-.title
-
-/*  ---------- создаём жирный заголовок  ---------- */
-  {
-  font-weight: 700;
-}
-
-h1 {
-  font-family: 'Roboto Bold', sans-serif;
-}
-
-p,
-i {
-  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -135,16 +117,13 @@ ul {
   padding: 0;
 }
 
-
 img {
   max-width: 100%;
   height: auto;
   /*  display: block; */
 }
 
-.capital
-
-/* ---------- Заглавные буквы  ---------- */
+.capital /* ---------- Заглавные буквы  ---------- */
   {
   text-transform: uppercase;
 }
@@ -163,8 +142,8 @@ img {
   overflow: hidden;
 }
 
-.style-none {
-  /* ---------- Обнуление стилей  ---------- */
+.style-none {  /* ---------- Обнуление стилей  ---------- */
+
   list-style: none;
 }
 
@@ -177,9 +156,6 @@ img {
 .page {
   height: 100%;
 }
-
-
-
 
 
 /* --------- Buttons GENERAL --------- */
@@ -218,101 +194,15 @@ img {
 }
 
 
-/*  ---------- Red button "УЗНАТЬ БОЛЬШЕ"  ---------- */
-.button-know-more {
-  width: 240px;
-  height: 50px;
-  left: 176px;
-  top: 399px;
-}
-
-.write-us {
-  width: 219px;
-  height: 50px;
-  top: 265px;
-  left: 190px;
-}
-
-.popup-send {
-  width: 259px;
-  left: 341px;
-  top: 2161px;
-  height: 50px;
-}
-
-.button-red,
-.button-green,
-.button-yellow {
-  width: 160px;
-  height: 50px;
-  left: 940px;
-  top: 922px;
-}
 
 
-/*  ---------- GREEN button  ---------- */
-.button-green {
-  text-align: center;
-  color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(--basic-green);
-}
+/* ------------------ BODY --------------------- */
+/* ------------------ BODY --------------------- */
+/* ------------------ BODY --------------------- */
+/* ------------------ BODY --------------------- */
+/* ------------------ BODY --------------------- */
+/* ------------------ BODY --------------------- */
 
-.button-green:hover,
-/* :hover — наведение мыши */
-.button-green:focus {
-  background-color: var(--basic-middle-green);
-}
-
-.button-green:active
-
-/*:active — клик (мышью или с клавиатуры) */
-  {
-  background: var(--basic-extra-green);
-  border: 1px solid var(--basic-black);
-  box-shadow: var(--box-shadow-color-025);
-  color: var(--box-shadow-color-black-03);
-  border-radius: 3px;
-}
-
-
-/*  ---------- Yellow buttons  ---------- */
-.button-yellow {
-  text-align: center;
-  color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(--basic-yellow);
-}
-
-.button-yellow:hover,
-/* :hover — наведение мыши */
-.button-yellow:focus {
-  background-color: var(--basic-middle-yellow);
-}
-
-.button-yellow:active
-
-/*:active — клик (мышью или с клавиатуры) */
-  {
-  background: var(--basic-extra-yellow);
-  border: 1px solid var(--basic-black);
-  box-shadow: var(--box-shadow-color-025);
-  color: var(--box-shadow-color-black-03);
-  border-radius: 3px;
-}
-
-.main-header {
-  outline: 5px solid rgba(0, 255, 0, 0.3);   /* ТЕСТОВОЕ, СТЕРЕТЬ!!!*/
-  display: grid;
-  justify-content: stretch;
-
-  grid-template-columns: min-content 1fr min-content;
-  width: 1160px;
-  margin: 0;
-  padding: 0 10px;
-}
 
 
 /* ------------------ Шапка сайта - HEADER--------------------- */
@@ -320,26 +210,22 @@ img {
 /* ------------------ Шапка сайта - HEADER--------------------- */
 
 
-/* Логотип - LOGO */
-
+/* ---------- Логотип - LOGO  ----------  */
 
 .logo-link {
-  /* display: inline-block; */
   width: 160px;
   height: 65px;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  /* ТЕСТОВОЕ, СТЕРЕТЬ!!!*/
-  justify-self: left;
+  outline: 5px solid rgba(255, 0, 0, 0.3);   /* ТЕСТОВОЕ, СТЕРЕТЬ!!!*/
+
+  justify-self: right;
 }
 
-.logo-link:hover,
-/* :hover — наведение мыши */
+.logo-link:hover, /* :hover — наведение мыши */
 .logo-link:focus {
   opacity: 0.7;
 }
 
-.logo-link:active {
-  /* :active — клик (мышью или с клавиатуры) */
+.logo-link:active {   /* :active — клик (мышью или с клавиатуры) */
   opacity: 0.3;
 }
 
@@ -348,12 +234,56 @@ img {
   height: auto;
 }
 
+.main-header {
+  outline: 5px solid rgba(0, 255, 0, 0.3);   /* ТЕСТОВОЕ, СТЕРЕТЬ!!!*/
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  justify-content: stretch;
+  width: 1160px;
+  margin: 0;
+  padding: 0 10px;
+}
 
+.main-navigation {
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--basic-black);
+  display: grid;
+  justify-content: stretch;
+  /* align-items: center; */
+  text-align: center;
+  grid-template-columns: min-content 1fr min-content;
+  width: 1160px;
+  height: 65px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*
+ main-navigation {
+
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--basic-black);
+  display: grid;
+  justify-content: stretch;
+  text-align: center;
+  grid-template-columns: 1fr min-content;   }
+
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 45px;
+} */
+
+
+/*  ------------- Навигация - Navigation  ------------ */
 
 .site-navigation-item {
   margin-left: -40px;
-  outline: 5px 5px solid rgba(255, 0, 0, 0.3);
-  /* ТЕСТОВОЕ, СТЕРЕТЬ!!!*/
+  outline: 5px 5px solid rgba(255, 0, 0, 0.3);   /* ТЕСТОВОЕ, СТЕРЕТЬ!!!*/
   /* display: inline-block; */
 }
 
@@ -361,7 +291,7 @@ img {
   margin-right: 47px;
 }
 
-.site-navigation-item a,
+.site-navigation-item a,  /* --------- Кнопки навигации и Корзина  ---------- */
 .user-navigation-item a {
   font-weight: 500;
   line-height: 30px;
@@ -385,64 +315,30 @@ img {
   opacity: 0.3;
 }
 
-/* ------- Main navigation ----------*/
-
-
-.main-navigation {
-  line-height: 30px;
-  font-weight: 500;
-  color: var(--basic-black);
-  display: grid;
-  justify-content: stretch;
-  align-items: center;
-  text-align: center;
-  grid-template-columns: min-content 1fr min-content;
-  width: 940px;
-  height: 431px;
-  margin: 0 auto;
-  padding: 0 45px;
-}
-
 .site-navigation-item:not(:last-child) {
   margin-right: 47px;
-  display: flex;
+  /* display: flex; ИЗ ФИГМЫ
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
-/*
- main-navigation {
-
-  line-height: 30px;
-  font-weight: 500;
-  color: var(--basic-black);
-  display: grid;
-  justify-content: stretch;
-  text-align: center;
-  grid-template-columns: 1fr min-content;   }
-
-.main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: min-content 1fr min-content;
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 45px;
-} */
-
-
 .site-navigation a:hover,
-/* --------- Кнопки навигации и Корзина  ---------- */
 .site-navigation a:focus {
   color: var(--basic-black);
 }
 
-.site-navigation a:active
-
-/*:active — клик (мышью или с клавиатуры) */
+.site-navigation a:active /*:active — клик (мышью или с клавиатуры) */
   {
   background-color: var(--basic-black);
   opacity: 0.3;
 }
+
+
+/* ------------------  MAIN  --------------------- */
+/* ------------------  MAIN  --------------------- */
+/* ------------------  MAIN  --------------------- */
+/* ------------------  MAIN  --------------------- */
+/* ------------------  MAIN  --------------------- */
 
 
 /* --------------------- Slider - Слайдер ----------------------- */
@@ -561,25 +457,108 @@ img {
 }
 
 
-/*--------------- Услуги ---------------*/
-/*--------------- Услуги ---------------*/
+/*--------------- Servises - Услуги ---------------*/
+/*--------------- Servises - Услуги ---------------*/
+/*--------------- Servises - Услуги ---------------*/
 
 .servises {
   font-size: 24px;
   line-height: 30px;
-  /* display: flex; */
+  /* display: flex; ИЗ ФИГМЫ */
   align-items: center;
   color: var(--basic-black);
-
+  text-transform: uppercase;
 }
 
-/* -------------  Лого партнеров  ---------------*/
-/* -------------  Лого партнеров  ---------------*/
-.academy-link {
-  opacity: 0.2;
+
+/*  ---------- Red button "УЗНАТЬ БОЛЬШЕ"  ---------- */
+.button-know-more {
+  width: 240px;
+  height: 50px;
+  left: 176px;
+  top: 399px;
 }
 
-.clients {
+.write-us {
+  width: 219px;
+  height: 50px;
+  top: 265px;
+  left: 190px;
+}
+
+.popup-send {
+  width: 259px;
+  left: 341px;
+  top: 2161px;
+  height: 50px;
+}
+
+.button-red,
+.button-green,
+.button-yellow {
+  width: 160px;
+  height: 50px;
+  left: 940px;
+  top: 922px;
+}
+
+
+/*  ---------- GREEN button  ---------- */
+.button-green {
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-green);
+}
+
+.button-green:hover,
+/* :hover — наведение мыши */
+.button-green:focus {
+  background-color: var(--basic-middle-green);
+}
+
+.button-green:active
+
+/*:active — клик (мышью или с клавиатуры) */
+  {
+  background: var(--basic-extra-green);
+  border: 1px solid var(--basic-black);
+  box-shadow: var(--box-shadow-color-025);
+  color: var(--box-shadow-color-black-03);
+  border-radius: 3px;
+}
+
+
+/*  ---------- Yellow buttons  ---------- */
+.button-yellow {
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-yellow);
+}
+
+.button-yellow:hover, /* :hover — наведение мыши */
+.button-yellow:focus {
+  background-color: var(--basic-middle-yellow);
+}
+
+.button-yellow:active /*:active — клик (мышью или с клавиатуры) */
+  {
+  background: var(--basic-extra-yellow);
+  border: 1px solid var(--basic-black);
+  box-shadow: var(--box-shadow-color-025);
+  color: var(--box-shadow-color-black-03);
+  border-radius: 3px;
+}
+
+
+
+
+/* -------------  Partners -  Партнеры  ---------------*/
+/* -------------  Partners -  Партнеры  ---------------*/
+.partners {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 1159;
@@ -588,15 +567,16 @@ img {
   padding: 0 40px;
 }
 
-.academy-link:hover,
-/* :hover — наведение мыши */
+.academy-link {
+  opacity: 0.2;
+}
+
+.academy-link:hover, /* :hover — наведение мыши */
 .academy-link:focus {
   opacity: 100%;
 }
 
-.academy-link:active
-
-/*:active — клик (мышью или с клавиатуры) */
+.academy-link:active  /*:active — клик (мышью или с клавиатуры) */
   {
   opacity: 0.1;
 }
@@ -625,11 +605,17 @@ img {
   line-height: 30px;
 }
 
-/*  ---------- Index columns  ---------- */
+
+/*  ---------- Мы — маленькая & Проценты - Index columns  ---------- */
+
+.nerds-img-persent-26 {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
 
 .aboutUsGrid {
-  display: grid;
-  grid-template-columns: 1fr 360px;
+  /* display: grid;
+  grid-template-columns: 1fr 360px; */
   margin: 0;
   padding: 0 10px;
   width: 1174;
@@ -642,12 +628,12 @@ img {
 }
 
 .about-title {
-  /* Для заоголовка Мы — маленькая, но  */
+  /* Для заголовка Мы — маленькая, но  */
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  display: flex;
-  align-items: center;
+  /* display: flex; ИЗ ФИГМЫ
+  align-items: center; */
 }
 
 .index-columns h2 {
@@ -657,8 +643,8 @@ img {
 
 .nerd-img-text {
   line-height: 18px;
-  display: flex;
-  align-items: center;
+  /* display: flex; ИЗ ФИГМЫ
+  align-items: center; */
 }
 
 .numbers-45 {
@@ -672,7 +658,7 @@ img {
   margin-top: auto;
 }
 
-/* Appointment         ---------- заготовка для ПОП-АПА Барбершоп. Базовая стилизация главной страницы  Шаг  17 / 27 -----------
+ /*Appointment         ---------- заготовка для ПОП-АПА Барбершоп. Базовая стилизация главной страницы  Шаг  17 / 27 ----------- */
 
 .appointment-item input {
   font: inherit;
@@ -683,14 +669,27 @@ img {
 .appointment-item input:focus {
   border-color: var(--special);
 }
-*/
 
-/* ---------- Footer  ----------- */
+
+/* --------------- ФУТЕР - Footer  ---------------- */
+/* --------------- ФУТЕР - Footer  ---------------- */
+/* --------------- ФУТЕР - Footer  ---------------- */
+/* --------------- ФУТЕР - Footer  ---------------- */
+/* --------------- ФУТЕР - Footer  ---------------- */
+
 
 .main-footer {
   color: var(--basic-black);
   background-color: var(--basic-white);
+ /* margin: 0 auto;
+  margin-top: auto;
+   padding-top: 68px;
+  padding-bottom: 68px;
+   display: flex; ИЗ ФИГМЫ
+  align-items: center;   */
 }
+
+/* ------------- Кнопка поп-апа - переход в Форму - Pop-up ----------- */
 
 .footer-address,
 footer-phone {
@@ -701,16 +700,6 @@ footer-phone {
   color: var(--footer-address-color);
 }
 
-.footer-discount {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: var(--footer-discount-color);
-  display: flex;
-  align-items: center;
-}
-
 a[href^="tel:"] {
   font-size: 16px;
   line-height: 32px;
@@ -718,17 +707,18 @@ a[href^="tel:"] {
   color: var(--basic-black);
 }
 
-
-.friendship-title {
-  font-family: Roboto;
+.writeTo-name,
+.writeTo-email,
+.writeTo-letterText {
   font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 36px;
-  /* identical to box height, or 100% */
-  display: flex;
-  align-items: center;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--footer-discount-color);
+  /* display: flex;  ИЗ ФИГМЫ
+  align-items: center;  */
 }
+
 
 /*  -------------- Социальные сети -- Social buttons -------------  */
 
@@ -749,9 +739,7 @@ a[href^="tel:"] {
   background-color: var(--basic-middle-red);
 }
 
-.social-button:active
-
-/*:active — клик (мышью или с клавиатуры) */
+.social-button:active /*:active — клик (мышью или с клавиатуры) */
   {
   background-color: var(--basic-extra-red);
   box-shadow: var(--box-shadow-color-01);
@@ -791,21 +779,15 @@ a[href^="tel:"] {
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
-  display: flex;
-  align-items: center;
+  /* display: flex; ИЗ ФИГМЫ
+  align-items: center; */
 }
 
-.writeTo-name,
-.writeTo-email,
-.writeTo-letterText {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: var(--footer-discount-color);
-  display: flex;
-  align-items: center;
+.bottom-footer {
+display: grid;
+grid-template-columns: 1fr 1fr;
 }
+
 
 /* Login form */
 
@@ -834,15 +816,38 @@ a[href^="tel:"] {
   background-color: var(--basic-middle-red);
 }
 
-.social-button:active
-
-/*:active — клик (мышью или с клавиатуры) */
+.social-button:active /*:active — клик (мышью или с клавиатуры) */
   {
   background-color: var(--basic-extra-red);
   box-shadow: var(--box-shadow-color-01);
   background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
   opacity: 0.3;
 }
+
+/*  -------------- Давайте дружить, это выгодно - Friendship -------------  */
+
+.footer-discount {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--footer-discount-color);
+  /*  display: flex; ИЗ ФИГМЫ
+  align-items: center; */
+}
+
+.friendship-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  /* identical to box height, or 100% */
+  /*  display: flex;  ИЗ ФИГМЫ
+  align-items: center; */
+}
+
+
 
 
 
@@ -869,8 +874,8 @@ a[href^="tel:"] {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  display: flex;
-  align-items: center;
+  /* display: flex; ИЗ ФИГМЫ
+  align-items: center; */
 }
 
 .filter ul {
@@ -898,8 +903,7 @@ a[href^="tel:"] {
 /* ---------- Templates - Tаблица готовых макетов ------------*/
 /* ----------  СТИЛИЗАЦИЯ КАРТОЧЕК ТОВАРОВ  --------- */
 
-.catalog-item {
-  /* Цвет задника при отсутствии прогрузки картинки товара */
+.catalog-item {    /* Цвет задника при отсутствии прогрузки картинки товара */
   background-color: var(--catalog-backgroung-color);
 }
 
@@ -914,27 +918,25 @@ a[href^="tel:"] {
   color: var(--basic-black);
 }
 
-.templates-text {
-  /* Текст к товару в карточке товара */
+.templates-text {    /* Текст к товару в карточке товара */
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  display: flex;
+  /* display: flex;  ИЗ ФИГМЫ
   align-items: center;
-  text-align: center;
+  text-align: center; */
   color: var(--footer-address-color)
 }
 
-.templates-title {
-  /* Название товара в карточке товара */
+.templates-title {   /* Название товара в карточке товара */
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  /* display: flex; */
+  /* display: flex; ИЗ ФИГМЫ
   align-items: center;
-  text-align: center;
+  text-align: center; */
   color: var(--basic-black);
 }
 
@@ -961,15 +963,12 @@ a[href^="tel:"] {
   border-radius: 3px;
 }
 
-.catalog-button:hover,
-/* :hover — наведение мыши */
+.catalog-button:hover,  /* :hover — наведение мыши */
 .catalog-button:focus {
   background-color: var(--basic-middle-red);
 }
 
-.catalog-button:active
-
-/*:active — клик (мышью или с клавиатуры) */
+.catalog-button:active   /*:active — клик (мышью или с клавиатуры) */
   {
   color: var(--basic-white);
   background-color: var(--basic-extra-red);
@@ -987,23 +986,19 @@ a[href^="tel:"] {
   left: 253px;
   top: 1986px;
   border-radius: 3px;
-  /* display: flex; */
+  /* display: flex; ИЗ ФИГМЫ
   align-items: center;
-  text-align: center;
+  text-align: center; */
 }
 
-.catalog-show:hover,
-/* :hover — наведение мыши */
+.catalog-show:hover, /* :hover — наведение мыши */
 .catalog-show:focus {
   background-color: var(--basic-middle-grey);
   border-radius: 3px;
 }
 
-.catalog-show:active
-
-/*:active — клик (мышью или с клавиатуры) */
-  {
-  /* color: var(--basic-black); */
+.catalog-show:active  /*:active — клик (мышью или с клавиатуры) */
+  {   /* color: var(--basic-black); */
   background-color: var(--catalog-show-button);
   box-shadow: var(--box-shadow-color-01);
   color: var(--one-more-color-03);
@@ -1034,8 +1029,7 @@ a[href^="tel:"] {
 }
 
 .pagination-item a:active {
-  color: var(--one-more-color-03);
-  /* box-sizing: border-box;*/
+  color: var(--one-more-color-03);    /* box-sizing: border-box;*/
   background: var(--catalog-show-button);
   border-radius: 3px;
   box-shadow: var(--box-shadow-color-01);
