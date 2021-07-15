@@ -514,11 +514,12 @@ padding: 0px 5px 0px 5px;
   top: 399px;
 }
 
-.write-us {
+.contacts-button {
   width: 219px;
   height: 50px;
-  top: 265px;
-  left: 190px;
+  padding: 16px 37px;
+	box-sizing: border-box;
+	text-align: center;
 }
 
 .popup-send {
@@ -645,9 +646,10 @@ padding: 0px 5px 0px 5px;
 
 .nerds-img-persent-26 {
   width: 1200px;
-  margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 651px 380px;
+  margin: 0;
+  padding: 0;
 }
 
 .aboutUsGrid {
@@ -655,7 +657,7 @@ padding: 0px 5px 0px 5px;
   grid-template-columns: 1fr 360px; */
   margin: 0;
   padding: 0;
-  width: 1174;
+  width: 651px;
 }
 
 .index-columns {
@@ -673,6 +675,21 @@ padding: 0px 5px 0px 5px;
   align-items: center; */
 }
 
+.aboutUs ul li { /* Красные линии перед текстом с перечислением */
+  padding-top: 25px;
+  list-style-type: none;
+}
+
+.aboutUs li:before {
+  content: "";
+  background-color: var(--basic-red);
+  width: 25px;
+  height: 2px;
+  display: inline-block;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
 .index-columns h2 {
   font-size: 45px;
   line-height: 45px;
@@ -682,6 +699,11 @@ padding: 0px 5px 0px 5px;
   line-height: 18px;
   /* display: flex; ИЗ ФИГМЫ
   align-items: center; */
+}
+
+.value-picture{
+  align-items: center;
+  justify-content: center;
 }
 
 .numbers-45 {
@@ -694,6 +716,15 @@ padding: 0px 5px 0px 5px;
   line-height: 40px;
   margin-top: auto;
 }
+
+.numberPersent, value-item {
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+}
+
+
+
 
  /*Appointment         ---------- заготовка для ПОП-АПА Барбершоп. Базовая стилизация главной страницы  Шаг  17 / 27 ----------- */
 
@@ -708,30 +739,35 @@ padding: 0px 5px 0px 5px;
 }
 
 
-/* --------------- ФУТЕР - Footer  ---------------- */
-/* --------------- ФУТЕР - Footer  ---------------- */
-/* --------------- ФУТЕР - Footer  ---------------- */
-/* --------------- ФУТЕР - Footer  ---------------- */
-/* --------------- ФУТЕР - Footer  ---------------- */
 
 
-.main-footer {
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 1440px;
-  /* margin-top: auto;
-   padding-top: 68px;
-  padding-bottom: 68px;
-    ИЗ ФИГМЫ
-   */
-}
+
+
+
 
 /* ------------- Кнопка поп-апа - переход в Форму - Pop-up ----------- */
+
+.footer-contacts {
+  display: inline-block;
+  margin-right: 16px;
+  padding: 13px 44px;
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 33px;
+  margin-left: 50px;
+}
+
+.footer-contacts {
+  position: absolute;
+  background-color: var(--basic-white);
+  top: 54px;
+  left: 150px;
+  width: 319px;
+  height: 308px;
+}
 
 .footer-address,
 footer-phone {
@@ -761,6 +797,32 @@ a[href^="tel:"] {
   align-items: center;  */
 }
 
+.feedback-button-close {
+	padding: 0;
+	border: none;
+	background: none;
+
+	position: absolute;
+	top: 80px;
+	right: 90px;
+
+	width: 21px;
+	height: 21px;
+
+	background-image: url("../img/close-cross.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+
+	opacity: 0.3;
+}
+
+.feedback-button-close:hover {
+	opacity: 1;
+}
+
+.feedback-button-close:active {
+	opacity: 0.1;
+}
 
 /*  -------------- Социальные сети -- Social buttons -------------  */
 
@@ -832,6 +894,193 @@ grid-template-columns: 1fr 1fr;
 }
 
 
+
+/*------------------ Модальное окно ---------------------*/
+
+.modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	display: none;
+	width: 960px;
+	height: 590px;
+	box-sizing: border-box;
+	padding: 65px 100px;
+	margin: auto;
+
+	background-color: #ffffff;
+	box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
+}
+
+.feedback.active {
+	display: block;
+}
+
+.feedback-title {
+	margin: 0;
+	margin-bottom: 40px;
+
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.feedback-form {
+	width: 760px;
+}
+
+.feedback-container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.feedback-field {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+.feedback-field label {
+	margin-bottom: 7px;
+
+	font-weight: 700;
+	font-size: 17px;
+	color: #000000;
+}
+
+.feedback-field input,
+.feedback-field textarea {
+	padding: 0;
+	background: none;
+	border: none;
+
+	box-sizing: border-box;
+	padding: 10px 16px;
+
+	font: inherit;
+
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+	outline: none;
+}
+
+.feedback-field input::-webkit-input-placeholder,
+.feedback-field textarea::-webkit-input-placeholder {
+	color: #444444;
+	opacity: 0.5;
+}
+
+.feedback-field input::-moz-placeholder,
+.feedback-field textarea::-moz-placeholder {
+	color: #444444;
+	opacity: 0.5;
+}
+
+.feedback-field input:-moz-placeholder,
+.feedback-field textarea:-moz-placeholder {
+	color: #444444;
+	opacity: 0.5;
+}
+
+.feedback-field input:-ms-input-placeholder,
+.feedback-field textarea:-ms-input-placeholder {
+	color: #444444;
+	opacity: 0.5;
+}
+
+.feedback-field input::-ms-input-placeholder,
+.feedback-field textarea::-ms-input-placeholder {
+	color: #444444;
+	opacity: 0.5;
+}
+
+.feedback-field input::placeholder,
+.feedback-field textarea::placeholder {
+	color: #444444;
+	opacity: 0.5;
+}
+
+.feedback-field input:hover,
+.feedback-field textarea:hover {
+	border: 2px solid #b4b9bb;
+}
+
+.feedback-field input:focus,
+.feedback-field textarea:focus {
+	border: 2px solid #000000;
+	color: #000000;
+}
+
+.feedback-field input:focus::-webkit-input-placeholder,
+.feedback-field textarea:focus::-webkit-input-placeholder {
+	color: #444444;
+	opacity: 1;
+}
+
+.feedback-field input:focus::-moz-placeholder,
+.feedback-field textarea:focus::-moz-placeholder {
+	color: #444444;
+	opacity: 1;
+}
+
+.feedback-field input:focus:-moz-placeholder,
+.feedback-field textarea:focus:-moz-placeholder {
+	color: #444444;
+	opacity: 1;
+}
+
+.feedback-field input:focus:-ms-input-placeholder,
+.feedback-field textarea:focus:-ms-input-placeholder {
+	color: #444444;
+	opacity: 1;
+}
+
+.feedback-field input:focus::-ms-input-placeholder,
+.feedback-field textarea:focus::-ms-input-placeholder {
+	color: #444444;
+	opacity: 1;
+}
+
+.feedback-field input:focus::placeholder,
+.feedback-field textarea:focus::placeholder {
+	color: #444444;
+	opacity: 1;
+}
+
+.feedback-field input:invalid,
+.feedback-field textarea:invalid {
+	border: 2px solid #e74246;
+	color: #e74246;
+}
+
+.feedback-field input {
+	width: 360px;
+}
+
+.feedback-field.feedback-text {
+	margin-bottom: 47px;
+}
+
+.feedback-field textarea {
+	width: 760px;
+	height: 120px;
+}
+
+.feedback-button {
+	width: 260px;
+}
+
+
+
+
+
+
+
+
 /* Login form */
 
 .login-form input[type="email"],
@@ -871,14 +1120,72 @@ grid-template-columns: 1fr 1fr;
 /*  -------------- КАРТА - MAP -------------  */
 
 .map {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: left baseline; */
   width: 1440px;
-  position: absolute;
-  left: 0;
+  padding: 0;
+  margin: 0;
+  }
+
+
+
+
+
+
+/* --------------- ФУТЕР - Footer  ---------------- */
+/* --------------- ФУТЕР - Footer  ---------------- */
+/* --------------- ФУТЕР - Footer  ---------------- */
+/* --------------- ФУТЕР - Footer  ---------------- */
+/* --------------- ФУТЕР - Footer  ---------------- */
+
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 1440px;
+  /* margin-top: auto;
+   padding-top: 68px;
+  padding-bottom: 68px;
+    ИЗ ФИГМЫ
+   */
 }
 
+
 /*  -------------- Давайте дружить, это выгодно - Friendship -------------  */
+
+.footer {
+  margin: 0 auto;
+  /* padding-top: 68px;
+  padding-bottom: 68px;
+  display: flex;
+  align-items: center;
+
+
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start; */
+
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  align-content: start;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1160px;
+
+  margin-top: 61px;
+}
 
 .footer-discount {
   font-style: normal;
@@ -900,6 +1207,12 @@ grid-template-columns: 1fr 1fr;
   /*  display: flex;  ИЗ ФИГМЫ
   align-items: center; */
 }
+
+
+
+
+
+
 
 
 

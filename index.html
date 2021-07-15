@@ -128,7 +128,7 @@
 
      <!-- Мы — маленькая & Проценты - Index columns  -->
   <div class="nerds-img-persent-26 container">
-    <section class="aboutUs aboutUsGrid index-columns">
+    <section class="aboutUs value-line aboutUsGrid index-columns">
       <h2 class="visually-hidden">О студии</h2> <!-- Скрыт -->
         <p class="about-title"> Мы — маленькая, но гордая веб-студия из Краснодара</p>
         <p class="small-text-color">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
@@ -143,34 +143,38 @@
 
         <section class="value container">
               <a>
-                <img src="img/nerds-illustration-1.png" width="360" height="208" alt="Логотип студии «Нёрдс» с веселым фоном">
+                <img class="value-picture" src="img/nerds-illustration-1.png" width="360" height="208" alt="Логотип студии «Нёрдс» с веселым фоном">
               </a>
+              <div class="value-line"></div>
               <h2 class="capital">с 2004 года Любим точность во всем:</h2>
-              <ul class="style-none">
+              <ul class="numberPersent style-none">
                 <li class="value-item">
                   <p>
                     <span class="numbers-45">146</span>
                     <span class="persent-26"><sup>&percnt;</sup></span>
                   </p>
-                  <p class="small-text-color nerd-img-text">Уровень самоотдачи</p>
+                  <p class="small-text-color nerd-img-text">Уровень <br>самоотдачи</p>
                 </li>
                 <li class="value-item">
                   <p>
                     <span class="numbers-45">100</span>
                     <span class="persent-26"><sup>&percnt;</sup></span>
                   </p>
-                  <p class="small-text-color nerd-img-text">Соблюдение сроков</p>
+                  <p class="small-text-color nerd-img-text">Соблюдение <br>сроков</p>
                 </li>
                 <li class="value-item">
                   <p>
                     <span class="numbers-45">50</span>
                     <span class="persent-26"><sup>&percnt;</sup></span>
                   </p>
-                  <p class="small-text-color nerd-img-text">Минимальная предоплата</p>
+                  <p class="small-text-color nerd-img-text">Минимальная <br>предоплата</p>
                 </li>
               </ul>
               </section>
             </div>
+
+
+
 
     <section class="partners container">  <!--   Partners -  Партнеры   -->
       <h4 class="visually-hidden">Логотипы клиентов</h4> <!-- Скрыт - Лого 4 разных компаний -->
@@ -191,19 +195,12 @@
           <img src="img/logo-Mishka-bl.png" width="173" height="84" alt="Логотип компании Мишка"></a>
         </figure>
     </section>
-</main>
-
-<!--  ФУТЕР - Footer  -->
-<!--  ФУТЕР - Footer  -->
-<!--  ФУТЕР - Footer  -->
-<!--  ФУТЕР - Footer  -->
-<!--  ФУТЕР - Footer  -->
 
 
-<footer class="main-footer">
+
+
 
   <!--  Кнопка поп-апа - переход в Форму - Pop-up    -->
-
   <section class="footer-contacts">
     <fieldset>
     <h2 class="visually-hidden">Контактная информация</h2> <!-- Скрыт -->
@@ -212,41 +209,34 @@
       наб. Реки Карповки,<br>
       5 лит П, Санкт-Петербург</p>
       <a class="footer-phone" href="tel:+78005558628"><span class="footer-address">+7 800 555-86-28</span></a><br>
-    <button class="button write-us" type="button">Напишите нам</button>
+    <button class="button contacts-button" type="button">Напишите нам</button>
     </fieldset>
   </section>
 
- <!--    Модальное окно Напишите нам - Modal    -->
-
-<section class="modal writeTo modal-description">
-  <h2>Напишите нам</h2>  <!-- Поп-ап -->
-  <form action="https://echo.htmlacademy.ru" method="post">
-    <p class="bold-modal">
-      <label for="name">Ваше имя:</label><br></p>
-    <p><input class="writeTo-name" type="text" id="name" name="name" value="Имя Фамилия" required>
-  </p>
-  <p class="bold-modal">
-      <label for="email">Ваш email:</label><br></p>
-    <p><span class="bold-modal"><input class="writeTo-email" type="email" id="email" name="email" value="email@example.com" required></span>
-  </p>
-  <p class="bold-modal">
-    <label for="letterText">Текст письма:</label></p>
-    <p><textarea class="writeTo-letterText" id="letterText" name="letterText" rows="5" placeholder="В свободной форме" required></textarea>
-  </p>
-      <div class="feedback-button">
-        <button class="button feedback-button feedback-button-submit popup-send" type="submit">Отправить</button>
-        <button class="button feedback-button feedback-button-close" type="button">Закрыть</button> <!-- Изменить кнопку на крестик закрытия окна -->
-  </div>
-</form>
-</section>
-
+  <!-- <a>  КАРТА - MAP -->
   <section class="map">
-    <h4 class="visually-hidden">КАРТА</h4> <!-- Скрыт -->
-    <!-- <a>  КАРТА ЧЕРЕЗ КАРТИНКУ
+    <h4 class="visually-hidden">КАРТА</h4>
+     <!-- <a>
       <img src="img/map.jpg" width="1440" height="416" alt="Карта с адресом">
-    </a> -->
+    </a>   -->
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419.77900876970364!2d30.317233850982962!3d59.96836339260688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bdb8347a1%3A0x30576fe611818343!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDXQu9C40YLQvywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NzAyMg!5e0!3m2!1sru!2sru!4v1626267888505!5m2!1sru!2sru" width="1440" height="416" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </section>
+
+
+</main>
+
+
+
+<!--  ФУТЕР - Footer  -->
+<!--  ФУТЕР - Footer  -->
+<!--  ФУТЕР - Footer  -->
+<!--  ФУТЕР - Footer  -->
+<!--  ФУТЕР - Footer  -->
+
+
+
+
+<footer class="main-footer">
 
   <div class="bottom-footer">
 <section class="footer-social">
@@ -289,5 +279,34 @@
  </section>
 </div>
 </footer>
+
+ <!--    Модальное окно Напишите нам - Modal    -->
+
+ <section class="modal writeTo modal-description">
+  <h2>Напишите нам</h2>  <!-- Поп-ап -->
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <p class="bold-modal">
+      <label for="name">Ваше имя:</label><br></p>
+    <p><input class="writeTo-name" type="text" id="name" name="name" value="Имя Фамилия" required>
+  </p>
+  <p class="bold-modal">
+      <label for="email">Ваш email:</label><br></p>
+    <p><span class="bold-modal"><input class="writeTo-email" type="email" id="email" name="email" value="email@example.com" required></span>
+  </p>
+  <p class="bold-modal">
+    <label for="letterText">Текст письма:</label></p>
+    <p><textarea class="writeTo-letterText" id="letterText" name="letterText" rows="5" placeholder="В свободной форме" required></textarea>
+  </p>
+      <div class="feedback-button">
+        <button class="button feedback-button feedback-button-submit popup-send" type="submit">Отправить</button>
+        <button class="button feedback-button feedback-button-close modal-close" type="button">Закрыть</button> <!-- Изменить кнопку на крестик закрытия окна -->
+  </div>
+</form>
+</section>
+
+<script src="js/script.js"></script>
+
+
+
 </body>
 </html>
