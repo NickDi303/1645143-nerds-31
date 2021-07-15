@@ -194,6 +194,20 @@ img {
 }
 
 
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.flex {
+display: flex;
+align-items: center;
+height: 100%;
+}
+
+
 
 
 /* ------------------ BODY --------------------- */
@@ -215,8 +229,7 @@ img {
 .logo-link {
   width: 160px;
   height: 65px;
-  outline: 5px solid rgba(255, 0, 0, 0.3);   /* ТЕСТОВОЕ, СТЕРЕТЬ!!!*/
-
+  /* outline: 5px solid rgba(255, 0, 0, 0.3);   ТЕСТОВОЕ, СТЕРЕТЬ!!!*/
   justify-self: right;
 }
 
@@ -234,30 +247,35 @@ img {
   height: auto;
 }
 
-.main-header {
-  outline: 5px solid rgba(0, 255, 0, 0.3);   /* ТЕСТОВОЕ, СТЕРЕТЬ!!!*/
-  display: grid;
-  grid-template-columns: min-content 1fr min-content;
-  justify-content: stretch;
-  width: 1160px;
-  margin: 0;
-  padding: 0 10px;
-}
 
-.main-navigation {
+/*  ------------- Навигация - Navigation  ------------ */
+
+
+.main-header {
   line-height: 30px;
   font-weight: 500;
   color: var(--basic-black);
-  display: grid;
+  /*  display: grid;
   justify-content: stretch;
-  /* align-items: center; */
-  text-align: center;
-  grid-template-columns: min-content 1fr min-content;
+  align-items: center;
+  text-align: center; - эта строка под вопросом, может быть включить ????????
+  grid-template-columns: min-content 1fr min-content; */
   width: 1160px;
-  height: 65px;
   margin: 0 auto;
-  padding: 0;
-}
+ }
+
+.main-navigation {
+  /* outline: 5px solid rgba(0, 255, 0, 0.3);   ТЕСТОВОЕ, СТЕРЕТЬ!!!
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  justify-content: stretch; */
+  width: 1160px;
+  margin: 0;
+  padding: 0 10px;
+  display: flex;
+   justify-content: space-between;
+  }
+
 
 /*
  main-navigation {
@@ -268,27 +286,37 @@ img {
   display: grid;
   justify-content: stretch;
   text-align: center;
-  grid-template-columns: 1fr min-content;   }
+  grid-template-columns: 1fr min-content;   } */
 
 .main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: min-content 1fr min-content;
-  width: 940px;
+  display: flex;
+  align-items: flex-end;
   margin: 0 auto;
-  padding: 0 45px;
-} */
+}
 
+ .header_link {
+  margin-right: 45px;
+}
 
-/*  ------------- Навигация - Navigation  ------------ */
+.user-navigation-item {
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  margin-left: auto;
+}
+
 
 .site-navigation-item {
   margin-left: -40px;
-  outline: 5px 5px solid rgba(255, 0, 0, 0.3);   /* ТЕСТОВОЕ, СТЕРЕТЬ!!!*/
-  /* display: inline-block; */
+  /* outline: 5px 5px solid rgba(255, 0, 0, 0.3);   ТЕСТОВОЕ, СТЕРЕТЬ!!!
+  display: inline-block; */
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-navigation-item:not(:last-child) {
   margin-right: 47px;
+
 }
 
 .site-navigation-item a,  /* --------- Кнопки навигации и Корзина  ---------- */
@@ -297,8 +325,6 @@ img {
   line-height: 30px;
   position: relative;
   display: inline-block;
-  font-weight: 500;
-  line-height: 30px;
   color: var(--basic-black);
   text-decoration: none;
   text-transform: uppercase;
@@ -340,13 +366,24 @@ img {
 /* ------------------  MAIN  --------------------- */
 /* ------------------  MAIN  --------------------- */
 
+main {
+display: block;
+width: 1200px;
+margin: auto;
+padding: 0px 5px 0px 5px;
+}
 
 /* --------------------- Slider - Слайдер ----------------------- */
 .slider {
   position: relative;
+  width: 1200px;
   background-color: var(--basic-grey);
-}
+ }
 
+ .slider-column {
+   display: flex;
+   justify-content: center;
+ }
 .slider input {
   display: none;
 }
@@ -561,7 +598,7 @@ img {
 .partners {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 1159;
+  width: 1200;
   height: 184;
   margin: 0 auto;
   padding: 0 40px;
@@ -609,8 +646,10 @@ img {
 /*  ---------- Мы — маленькая & Проценты - Index columns  ---------- */
 
 .nerds-img-persent-26 {
-display: grid;
-grid-template-columns: 1fr 1fr;
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .aboutUsGrid {
@@ -681,12 +720,17 @@ grid-template-columns: 1fr 1fr;
 .main-footer {
   color: var(--basic-black);
   background-color: var(--basic-white);
- /* margin: 0 auto;
-  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 1440px;
+  /* margin-top: auto;
    padding-top: 68px;
   padding-bottom: 68px;
-   display: flex; ИЗ ФИГМЫ
-  align-items: center;   */
+    ИЗ ФИГМЫ
+   */
 }
 
 /* ------------- Кнопка поп-апа - переход в Форму - Pop-up ----------- */
@@ -768,6 +812,7 @@ a[href^="tel:"] {
   box-shadow: var(--box-shadow-color-04);
 }
 
+
 .modal h2 {
   font-style: normal;
   font-weight: bold;
@@ -822,6 +867,17 @@ grid-template-columns: 1fr 1fr;
   box-shadow: var(--box-shadow-color-01);
   background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
   opacity: 0.3;
+}
+
+
+/*  -------------- КАРТА - MAP -------------  */
+
+.map {
+  display: flex;
+  justify-content: center;
+  width: 1440px;
+  position: absolute;
+  left: 0;
 }
 
 /*  -------------- Давайте дружить, это выгодно - Friendship -------------  */
