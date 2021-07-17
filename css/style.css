@@ -645,6 +645,7 @@ padding: 0px 5px 0px 5px;
   width: 1200px;
   display: grid;
   grid-template-columns: 651px 380px;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -668,8 +669,6 @@ padding: 0px 5px 0px 5px;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  /* display: flex; ИЗ ФИГМЫ
-  align-items: center; */
 }
 
 .aboutUs ul li { /* Красные линии перед текстом с перечислением */
@@ -694,13 +693,12 @@ padding: 0px 5px 0px 5px;
 
 .nerd-img-text {
   line-height: 18px;
-  /* display: flex; ИЗ ФИГМЫ
-  align-items: center; */
-}
+  }
 
-.value-picture{
-  align-items: center;
-  justify-content: center;
+.value {
+  width: 360px;
+  margin: 0;
+  padding: 0;
 }
 
 .numbers-45 {
@@ -738,8 +736,14 @@ padding: 0px 5px 0px 5px;
 /* ------------- Кнопка поп-апа - переход в Форму - Pop-up ----------- */
 
 .map {
-  width: 1440px;
-  height: auto;
+  width: 1850px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -280px;
+   height: auto;
   padding-left: 0;
   justify-content: space-between;
   }
@@ -762,7 +766,7 @@ padding: 0px 5px 0px 5px;
    margin-top: 83px;
    margin-bottom: 25px;
    margin-right: 976px;
-   margin-left: 145px;
+   margin-left: 0;
    position: absolute;
 }
 
