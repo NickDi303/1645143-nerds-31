@@ -176,8 +176,7 @@ img {
   border: 3px;
 }
 
-.button:hover,
-/* :hover — наведение мыши */
+.button:hover, /* :hover — наведение мыши */
 .button:focus {
   background-color: var(--basic-middle-red);
 }
@@ -224,9 +223,12 @@ height: 100%;
 .logo-link {
   width: 160px;
   height: 65px;
-  /* outline: 5px solid rgba(255, 0, 0, 0.3);   ТЕСТОВОЕ, СТЕРЕТЬ!!!*/
   display: flex;
   justify-self: left;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 49px;
 }
 
 .logo-link:hover, /* :hover — наведение мыши */
@@ -270,48 +272,39 @@ height: 100%;
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   }
 
 
-/*
- main-navigation {
-
-  line-height: 30px;
-  font-weight: 500;
-  color: var(--basic-black);
-  display: grid;
-  justify-content: stretch;
-  text-align: center;
-  grid-template-columns: 1fr min-content;   } */
-
 .main-navigation-wrapper {
   display: flex;
-  align-items: flex-end;
+  align-items: row;
   margin: 0 auto;
+  align-items: center;
+  padding: 0px;
 }
 
  .header_link {
   margin-right: 45px;
 }
 
-.user-navigation-item {
-  display: flex;
-  align-items: flex-end;
-  justify-content: left;
-}
-
-
 .site-navigation-item {
-  margin-left: -40px;
-  /* outline: 5px 5px solid rgba(255, 0, 0, 0.3);   ТЕСТОВОЕ, СТЕРЕТЬ!!!
-  display: inline-block; */
+  /* margin-left: -40px; */
+  /* display: inline-block; */
   display: flex;
   justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+
+  width: 437px;
+  height: 30px;
+  margin-left: 202px;
+  margin-bottom: 9px;
+  margin-top: 82px;
 }
 
 .site-navigation-item:not(:last-child) {
   margin-right: 47px;
-
 }
 
 .site-navigation-item a,  /* --------- Кнопки навигации и Корзина  ---------- */
@@ -326,7 +319,9 @@ height: 100%;
 }
 
 .site-navigation-item a:hover,
-.site-navigation-item a:focus .user-navigation-item a:hover .user-navigation-item a:focus {
+.site-navigation-item a:focus,
+.user-navigation-item a:hover,
+.user-navigation-item a:focus {
   color: var(--basic-red);
 }
 
@@ -338,10 +333,17 @@ height: 100%;
 
 .site-navigation-item:not(:last-child) {
   margin-right: 47px;
-  /* display: flex; ИЗ ФИГМЫ
-  justify-content: center;
-  align-items: center; */
 }
+
+
+.site-navigation {
+  display: flex;
+  margin-top: 75px;
+  margin: 0px;
+  padding: 0px;
+}
+
+
 
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -353,6 +355,32 @@ height: 100%;
   background-color: var(--basic-black);
   opacity: 0.3;
 }
+
+.user-navigation-item {
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+
+  height: 30px;
+  margin-bottom: 9px;
+  margin-top: 85px;
+}
+
+.user-navigation-item::before {
+  content: "";
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/cart-icon.svg) /* Иконка корзины */
+}
+
+
+
 
 
 /* ------------------  MAIN  --------------------- */
@@ -1217,6 +1245,22 @@ grid-template-columns: 1fr 1fr;
 /*  ---------- CATALOG PAGES  ---------- */
 /*  ---------- CATALOG PAGES  ---------- */
 /*  ---------- CATALOG PAGES  ---------- */
+
+
+.catalog-title h1 {
+  margin: 0;
+  padding: 0;
+  width: 727px;
+  height: 55px;
+  margin-top: 72px;
+  margin-bottom: 108px;
+  margin-left: 357px;
+  margin-right: 356px;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  align-items: center;
+}
 
 .page-title {
   font-style: normal;

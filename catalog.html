@@ -26,6 +26,7 @@
         <a class="logo-link" href="index.html">    <!-- Логотип - LOGO  -->
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»">
         </a>
+
       <nav class="main-navigation-wrapper">   <!-- Навигация - Main Navigation -->
         <ul class="style-none site-navigation-item">
           <li><a class="header_link" href="#">Студия</a></li>
@@ -35,8 +36,7 @@
         </ul>
         <ul class="style-none user-navigation-item">
           <li>
-            <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины"> <!-- Иконка корзины -->
-            <a class="site-navigation user-navigation-item" href="#">Корзина</a>
+            <a class="site-navigation" href="#">Корзина</a> <!-- Иконка корзины через ::before -->
           </li>
         </ul>
       </nav>
@@ -44,11 +44,13 @@
   </header>
 
 
-    <main class="catalog">
+    <main class="catalog-title">
       <h1>Магазин готовых шаблонов</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
       </section>
+
+
       <section class="cost capital templates-title"> Стоимость: <!-- Иконка СЛАЙДЕРА - урок 9 -->
       </section>
       <section class="network">
@@ -279,10 +281,12 @@
       </li>
     </ul>
   </section>
+
  <section class="friendship">
   <p class="friendship-title">Давайте дружить, это выгодно!</p>
   <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
  </section>
+
 </footer>
 </body>
 </html>
